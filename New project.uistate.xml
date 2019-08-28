@@ -10,14 +10,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="2">1</layout>
+        <layout order="2">Level</layout>
+        <layout order="4">1</layout>
+        <layout active="1" order="6">2</layout>
         <layout order="0">Menu</layout>
-        <layout order="4">2</layout>
-        <layout active="1" order="6">3</layout>
-        <event-sheet order="3">Logik Stage 1</event-sheet>
-        <event-sheet order="1">Menu Logik</event-sheet>
-        <event-sheet order="5">Logik Stage 2</event-sheet>
-        <event-sheet order="7">Logik Stage 3</event-sheet>
+        <layout order="9">3</layout>
+        <event-sheet order="3">Logik Level</event-sheet>
+        <event-sheet order="7">Logik Stage 2</event-sheet>
+        <event-sheet order="8">Logik Stage 3</event-sheet>
+        <event-sheet order="1">Logik Menu</event-sheet>
+        <event-sheet order="5">Logik Stage 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -86,5 +88,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/bg_layer/" />
         <folder expanded="1" path="animation-folder/ground_grass/" />
         <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/backgroundMenu/" />
+        <folder expanded="1" path="animation-folder/backgroundMenu2/" />
+        <folder expanded="1" path="animation-folder/backgroundMenu3/" />
+        <folder expanded="1" path="animation-folder/Play/" />
+        <folder expanded="1" path="animation-folder/SiFajar/" />
+        <folder expanded="1" path="animation-folder/Button_/" />
     </folders-expanded>
 </c2uistate>

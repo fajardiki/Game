@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Logik Stage 2</name>
     <events>
+        <variable constant="0" name="playernyawa2" sid="224500465591037" static="0" type="number">9</variable>
+        <variable constant="0" name="koin2" sid="4141192325245092" static="0" type="number">0</variable>
         <event-block sid="6405949707159198">
             <conditions>
                 <condition behavior="Platform" id="8" name="On moved" sid="6028092934766793" type="Berdiri" />
