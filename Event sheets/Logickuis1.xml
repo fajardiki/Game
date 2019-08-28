@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Logickuis1</name>
+    <events>
+        <event-block sid="7381153559498531">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3406682083417989" type="Touch">
+                    <param id="0" name="Object">ulabvr</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="4739854539417776" type="tandaX">
+                    <param id="0" name="X">553</param>
+                    <param id="1" name="Y">146</param>
+                </action>
+                <action id="-9" name="Destroy" sid="5899646754449429" type="ulabvr" />
+                <action id="-9" name="Destroy" sid="9740079771227063" type="hewanGajah" />
+                <action id="-9" name="Destroy" sid="814816944265908" type="tikusuz" />
+                <action id="-3" name="Set position" sid="1347894613470632" type="cobalagi">
+                    <param id="0" name="X">543</param>
+                    <param id="1" name="Y">398</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1299230412206448">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6516672454090832" type="Touch">
+                    <param id="0" name="Object">tikusuz</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="6467488235409707" type="Centang2">
+                    <param id="0" name="X">553</param>
+                    <param id="1" name="Y">146</param>
+                </action>
+                <action id="-9" name="Destroy" sid="307229852191629" type="ulabvr" />
+                <action id="-9" name="Destroy" sid="8417222747073897" type="hewanGajah" />
+                <action id="-9" name="Destroy" sid="827882187095682" type="tikusuz" />
+                <action id="-3" name="Set position" sid="8891776323574775" type="IconSelanjutnya">
+                    <param id="0" name="X">543</param>
+                    <param id="1" name="Y">398</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4390570020375662">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3255898909610101" type="Touch">
+                    <param id="0" name="Object">hewanGajah</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="911834495162745" type="tandaX">
+                    <param id="0" name="X">553</param>
+                    <param id="1" name="Y">146</param>
+                </action>
+                <action id="-9" name="Destroy" sid="4529029493757139" type="ulabvr" />
+                <action id="-9" name="Destroy" sid="4510691546369978" type="hewanGajah" />
+                <action id="-9" name="Destroy" sid="9359780399824669" type="tikusuz" />
+                <action id="-3" name="Set position" sid="3514354919803988" type="cobalagi">
+                    <param id="0" name="X">543</param>
+                    <param id="1" name="Y">398</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="692716702846437">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7615663447514361" type="Touch">
+                    <param id="0" name="Object">cobalagi</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7307905866279728" type="System">
+                    <param id="0" name="Layout">Kuis1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4362141316572563">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7406078102892221" type="Touch">
+                    <param id="0" name="Object">IconSelanjutnya</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3560325576370319" type="System">
+                    <param id="0" name="Layout">2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
