@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2nqvxqekpn30q</unique-id>
+    <saved-with-version>20900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1138</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="langit" sid="1075310323550422">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3669352353914332" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\asus\Desktop\Asset\langit1.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground3" sid="479622777199784">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9555302321003211">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\asus\Desktop\Asset\Daratan\grassMid.png" />
+        </object-type>
+        <object-type name="Keyboard" sid="6525904114478024">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Player_stand" sid="8890988403277865">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="nyawa" sid="935880976483267" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="9665262609067444">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="4224267381546632">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="3150838751844396">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="6550433504795379" speed="5">
+                    <frame duration="1" hotspotX="0.501873" hotspotY="1" original-source="C:\Users\asus\Desktop\Asset\Player\Berdiri.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="7252768684356969" speed="8">
+                    <frame duration="1" hotspotX="0.501873" hotspotY="1" original-source="C:\Users\asus\Desktop\Asset\Player\Berdiri.png">
+                        <collision-poly>
+                            <point x="0.194757" y="0.09375" />
+                            <point x="0.561798" y="0.0121528" />
+                            <point x="0.891386" y="0.112847" />
+                            <point x="0.677903" y="0.494792" />
+                            <point x="0.689139" y="0.782986" />
+                            <point x="0.561798" y="0.996528" />
+                            <point x="0.367041" y="0.815972" />
+                            <point x="0.123596" y="0.494792" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.425397" hotspotY="0.993103" original-source="C:\Users\asus\Desktop\Asset\Player\Lompat.png">
+                        <collision-poly>
+                            <point x="0.180952" y="0.0982759" />
+                            <point x="0.498413" y="0.0224138" />
+                            <point x="0.777778" y="0.12069" />
+                            <point x="0.593651" y="0.5" />
+                            <point x="0.67619" y="0.824138" />
+                            <point x="0.498413" y="0.998276" />
+                            <point x="0.285714" y="0.844828" />
+                            <point x="0.11746" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.425397" hotspotY="1.03226" original-source="C:\Users\asus\Desktop\Asset\Player\Jalan.png">
+                        <collision-poly>
+                            <point x="0.174603" y="0.0985663" />
+                            <point x="0.498413" y="0.0250896" />
+                            <point x="0.777778" y="0.125448" />
+                            <point x="0.625397" y="0.5" />
+                            <point x="0.892063" y="0.939068" />
+                            <point x="0.498413" y="0.876344" />
+                            <point x="0.0698413" y="0.960573" />
+                            <point x="0.111111" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="1505286667403278" speed="5">
+                    <frame duration="1" hotspotX="0.501587" hotspotY="0.993103" original-source="C:\Users\asus\Desktop\Asset\Player\Lompat.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tree" sid="5343538819081445">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6886433336937086" speed="5">
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Dekor\tree34.png">
+                        <collision-poly>
+                            <point x="0.209302" y="0.117391" />
+                            <point x="0.496124" y="0" />
+                            <point x="0.790698" y="0.117391" />
+                            <point x="0.992248" y="0.5" />
+                            <point x="0.72093" y="0.843478" />
+                            <point x="0.496124" y="0.995652" />
+                            <point x="0.27907" y="0.843478" />
+                            <point x="0.0155039" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bush" sid="1001586718031881">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3045583970572039" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Daratan\bush.png">
+                        <collision-poly>
+                            <point x="0.414063" y="0.414063" />
+                            <point x="0.5" y="0.40625" />
+                            <point x="0.59375" y="0.40625" />
+                            <point x="0.765625" y="0.5" />
+                            <point x="0.992188" y="0.992188" />
+                            <point x="0.015625" y="0.984375" />
+                            <point x="0.28125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="house2" sid="8624591441064061">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7235612190745754" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Rumah\house-1.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.25" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0.25" />
+                            <point x="0.955357" y="0.5" />
+                            <point x="0.919643" y="0.919643" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0803571" y="0.919643" />
+                            <point x="0.0446429" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tree2" sid="1355837177422491">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8327220333750217">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4305890867655915" speed="5">
+                    <frame duration="1" hotspotX="0.503497" hotspotY="0.501639" original-source="C:\Users\asus\Desktop\Asset\Dekor\tree29.png">
+                        <collision-poly>
+                            <point x="0.27972" y="0.131148" />
+                            <point x="0.496504" y="0" />
+                            <point x="0.538462" y="0.216393" />
+                            <point x="0.629371" y="0.498361" />
+                            <point x="0.573427" y="0.8" />
+                            <point x="0.496504" y="1" />
+                            <point x="0.433566" y="0.796721" />
+                            <point x="0.447552" y="0.498361" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassCliff_left" sid="2229879147794216">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="8522358322367692">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7575559274603637" speed="0">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Daratan\grassCliff_left.png">
+                        <collision-poly>
+                            <point x="0.03125" y="0.03125" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.90625" />
+                            <point x="0.234375" y="0.765625" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Daratan\grassCliff_right.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.96875" y="0.03125" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.765625" y="0.765625" />
+                            <point x="0.5" y="0.898438" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassMid" sid="9910524961693654">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="4680317298797817">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5713957342649763" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Daratan\grassMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassCorner_right" sid="6058151521258001">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6504052147260944">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7291122880095105" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Daratan\grassCorner_right.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassHill_right" sid="6467092543605038">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1462102036235762">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1212894345051045" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Daratan\grassHill_right.png">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="0.992308" y="0.992308" />
+                            <point x="0" y="1" />
+                            <point x="0.5" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassRight" sid="2491887620005271">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9041761715696208">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6897492897899891" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Daratan\grassRight.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassHalf" sid="1259451783237589">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="6562872367759463">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5753822091662197" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.855263" original-source="C:\Users\asus\Desktop\Asset\Daratan\grassHalf.png">
+                        <collision-poly>
+                            <point x="0.0384615" y="0.0657895" />
+                            <point x="0.5" y="0.0131579" />
+                            <point x="0.961538" y="0.0657895" />
+                            <point x="0.976923" y="0.855263" />
+                            <point x="0.569231" y="0.973684" />
+                            <point x="0.430769" y="0.973684" />
+                            <point x="0.0230769" y="0.855263" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassLeft" sid="3643565413224971">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5906878263470763">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1422384482075369" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Daratan\grassLeft.png">
+                        <collision-poly>
+                            <point x="0.0390625" y="0.0390625" />
+                            <point x="0.5" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.96875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grassHalf2" sid="3665901356577633">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="1565681989704716">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="701849603299679">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="9599332471573206">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5783715400819711" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.855263" original-source="C:\Users\asus\Desktop\Asset\Daratan\grassHalf.png">
+                        <collision-poly>
+                            <point x="0.0384615" y="0.0657895" />
+                            <point x="0.5" y="0.0131579" />
+                            <point x="0.961538" y="0.0657895" />
+                            <point x="0.976923" y="0.855263" />
+                            <point x="0.569231" y="0.973684" />
+                            <point x="0.430769" y="0.973684" />
+                            <point x="0.0230769" y="0.855263" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tinyShroom_red" sid="4089207677721734">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2827774062366201" speed="5">
+                    <frame duration="1" hotspotX="0.536585" hotspotY="-0.125" original-source="C:\Users\asus\Desktop\Asset\Dekor\tinyShroom_red.png">
+                        <collision-poly>
+                            <point x="0.682927" y="0.0625" />
+                            <point x="0.536585" y="0.03125" />
+                            <point x="0.414634" y="0.03125" />
+                            <point x="0.97561" y="0.4375" />
+                            <point x="0.536585" y="0.96875" />
+                            <point x="0.0487805" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jembatan" sid="2544837384202939">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2464573903502862" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.673025" original-source="C:\Users\asus\Desktop\Asset\Dekor\jembatan.png">
+                        <collision-poly>
+                            <point x="0.502494" y="0.504087" />
+                            <point x="0.497506" y="0.504087" />
+                            <point x="0.806733" y="0.498638" />
+                            <point x="0.725686" y="0.991826" />
+                            <point x="0.5" y="0.73297" />
+                            <point x="0.274314" y="0.991826" />
+                            <point x="0.193267" y="0.498638" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jembatan_bawah" sid="3249508227242324">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8277741622156949">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5087241085110046" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Dekor\jembatan_bawah.png">
+                        <collision-poly>
+                            <point x="0.00124688" y="0.00769231" />
+                            <point x="0.998753" y="0.00769231" />
+                            <point x="0.769327" y="0.5" />
+                            <point x="0.877805" y="0.246154" />
+                            <point x="0.122195" y="0.246154" />
+                            <point x="0.230673" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jembatan_atas" sid="1602893847709281">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3506188958858381" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502075" original-source="C:\Users\asus\Desktop\Asset\Dekor\jembatan_atas.png">
+                        <collision-poly>
+                            <point x="0.209476" y="0.697095" />
+                            <point x="0.5" y="0.767635" />
+                            <point x="0.790524" y="0.697095" />
+                            <point x="0.758105" y="0.497925" />
+                            <point x="0.998753" y="0.995851" />
+                            <point x="0.00124688" y="0.995851" />
+                            <point x="0.241895" y="0.497925" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground" sid="2017261618357729">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\asus\Desktop\Asset\Dekor\17.png" />
+        </object-type>
+        <object-type name="monas" sid="5569680360325639">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6618784005205313" speed="5">
+                    <frame duration="1" hotspotX="0.502222" hotspotY="0.502222" original-source="C:\Users\asus\Desktop\Asset\Dekor\monas.png">
+                        <collision-poly>
+                            <point x="0.417778" y="0.417778" />
+                            <point x="0.497778" y="0" />
+                            <point x="0.582222" y="0.417778" />
+                            <point x="0.586667" y="0.497778" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.413333" y="0.497778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="4490265820157399">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\asus\Desktop\Asset\Daratan\grassCenter.png" />
+        </object-type>
+        <object-type name="grassRight2" sid="1088376584324892">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7150968675227242">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="50932680945884" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Daratan\grassRight.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.960938" y="0.0390625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.96875" y="0.96875" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="wingMan" sid="7176262837702242">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="7447472021972928">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6725890952375161" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Musuh\wingMan1.png">
+                        <collision-poly>
+                            <point x="0.0574713" y="0.0793651" />
+                            <point x="0.5" y="0.206349" />
+                            <point x="0.942529" y="0.0793651" />
+                            <point x="0.994253" y="0.5" />
+                            <point x="0.793103" y="0.714286" />
+                            <point x="0.5" y="0.857143" />
+                            <point x="0.212644" y="0.706349" />
+                            <point x="0.00574713" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673" original-source="C:\Users\asus\Desktop\Asset\Musuh\wingMan2.png">
+                        <collision-poly>
+                            <point x="0.0291262" y="0.0560748" />
+                            <point x="0.970874" y="0.0560748" />
+                            <point x="0.927184" y="0.495327" />
+                            <point x="0.834951" y="0.682243" />
+                            <point x="0.5" y="0.831776" />
+                            <point x="0.165049" y="0.682243" />
+                            <point x="0.0728155" y="0.495327" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="C:\Users\asus\Desktop\Asset\Musuh\wingMan3.png">
+                        <collision-poly>
+                            <point x="0.12963" y="0.277228" />
+                            <point x="0.5" y="0.00990099" />
+                            <point x="0.87037" y="0.277228" />
+                            <point x="0.976852" y="0.49505" />
+                            <point x="0.851852" y="0.683168" />
+                            <point x="0.5" y="0.821782" />
+                            <point x="0.148148" y="0.683168" />
+                            <point x="0.0231481" y="0.49505" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504951" original-source="C:\Users\asus\Desktop\Asset\Musuh\wingMan4.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.475248" />
+                            <point x="0.5" y="0.00990099" />
+                            <point x="0.777778" y="0.475248" />
+                            <point x="0.800926" y="0.49505" />
+                            <point x="0.939815" y="0.871287" />
+                            <point x="0.5" y="0.821782" />
+                            <point x="0.0601852" y="0.871287" />
+                            <point x="0.194444" y="0.49505" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504065" original-source="C:\Users\asus\Desktop\Asset\Musuh\wingMan5.png">
+                        <collision-poly>
+                            <point x="0.247253" y="0.365854" />
+                            <point x="0.5" y="0.00813008" />
+                            <point x="0.752747" y="0.365854" />
+                            <point x="0.972527" y="0.95935" />
+                            <point x="0.5" y="0.674797" />
+                            <point x="0.0274725" y="0.95935" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="barnacle" sid="7418253652522482">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="7052221369950248">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5229705627050412" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Musuh\barnacle.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.273438" />
+                            <point x="0.5" y="0.34375" />
+                            <point x="0.726563" y="0.273438" />
+                            <point x="0.765625" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="1" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.234375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Musuh\barnacle_attack.png">
+                        <collision-poly>
+                            <point x="0.328125" y="0.328125" />
+                            <point x="0.5" y="0.195313" />
+                            <point x="0.671875" y="0.328125" />
+                            <point x="0.765625" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="1" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.234375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Musuh\barnacle_dead.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.273438" />
+                            <point x="0.5" y="0.34375" />
+                            <point x="0.726563" y="0.273438" />
+                            <point x="0.765625" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="1" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.234375" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="switchRed" sid="8223812813496935">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="451010639321303" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Musuh\switchRed.png">
+                        <collision-poly>
+                            <point x="0.367188" y="0.367188" />
+                            <point x="0.5" y="0.34375" />
+                            <point x="0.632813" y="0.367188" />
+                            <point x="0.78125" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.21875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Musuh\switchRed_pressed.png">
+                        <collision-poly>
+                            <point x="0.671875" y="0.671875" />
+                            <point x="0.5" y="0.625" />
+                            <point x="0.328125" y="0.671875" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="female_idle" sid="1909717280347437">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5997111182472872" speed="5">
+                    <frame duration="1" hotspotX="0.492308" hotspotY="0.370787" original-source="C:\Users\asus\Documents\Game\kenney_platformercharacters\PNG\Female\Poses\female_idle.png">
+                        <collision-poly>
+                            <point x="0.246154" y="0.0224719" />
+                            <point x="0.492308" y="0.0224719" />
+                            <point x="0.692308" y="0.0561798" />
+                            <point x="0.815385" y="0.370787" />
+                            <point x="0.938462" y="0.865169" />
+                            <point x="0.492308" y="0.808989" />
+                            <point x="0.0615385" y="0.853933" />
+                            <point x="0.123077" y="0.370787" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gold_" sid="8990955602583219">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9165716858652956" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Dekor\gold_1.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.142857" />
+                            <point x="0.5" y="0" />
+                            <point x="0.857143" y="0.142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.857143" y="0.857143" />
+                            <point x="0.5" y="1" />
+                            <point x="0.142857" y="0.857143" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Dekor\gold_2.png">
+                        <collision-poly>
+                            <point x="0.151515" y="0.119048" />
+                            <point x="0.5" y="0" />
+                            <point x="0.848485" y="0.119048" />
+                            <point x="1" y="0.5" />
+                            <point x="0.848485" y="0.880952" />
+                            <point x="0.5" y="1" />
+                            <point x="0.151515" y="0.880952" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Dekor\gold_3.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.0952381" />
+                            <point x="0.5" y="0" />
+                            <point x="0.84" y="0.0952381" />
+                            <point x="1" y="0.5" />
+                            <point x="0.84" y="0.904762" />
+                            <point x="0.5" y="1" />
+                            <point x="0.16" y="0.904762" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Dekor\gold_4.png">
+                        <collision-poly>
+                            <point x="0.0666667" y="0.0119048" />
+                            <point x="0.466667" y="0" />
+                            <point x="0.933333" y="0.0119048" />
+                            <point x="1" y="0.5" />
+                            <point x="0.933333" y="0.988095" />
+                            <point x="0.466667" y="1" />
+                            <point x="0.0666667" y="0.988095" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hudHeart_full" sid="2323808206535432">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3418984033027623" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\platformer-pack-redux-360-assets\PNG\HUD\hudHeart_full.png">
+                        <collision-poly>
+                            <point x="0.234375" y="0.234375" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.757813" y="0.242188" />
+                            <point x="0.851563" y="0.5" />
+                            <point x="0.695313" y="0.695313" />
+                            <point x="0.5" y="0.851563" />
+                            <point x="0.296875" y="0.703125" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="4294103967367145">
+            <plugin id="Spritefont2" />
+            <instance-variables>
+                <instance-variable name="type" sid="8202131646512508" type="string" />
+            </instance-variables>
+            <texture original-source="C:\Users\asus\Desktop\Asset\Impact_Regular.png" />
+        </object-type>
+        <object-type name="hudCoin" sid="4068792162585844">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8689642996607649" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\platformer-pack-redux-360-assets\PNG\HUD\hudCoin.png">
+                        <collision-poly>
+                            <point x="0.273438" y="0.273438" />
+                            <point x="0.5" y="0.171875" />
+                            <point x="0.734375" y="0.265625" />
+                            <point x="0.84375" y="0.5" />
+                            <point x="0.742188" y="0.742188" />
+                            <point x="0.5" y="0.84375" />
+                            <point x="0.257813" y="0.742188" />
+                            <point x="0.171875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Window" sid="8264511728628091">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9747193866854864" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501171" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\Window.png">
+                        <collision-poly>
+                            <point x="0.0116086" y="0.0163934" />
+                            <point x="0.499171" y="0.00234192" />
+                            <point x="0.985075" y="0.0210773" />
+                            <point x="0.980099" y="0.971897" />
+                            <point x="0.0165837" y="0.976581" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="complete" sid="6408797366536627">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="489777687233783" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504065" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\complete.png">
+                        <collision-poly>
+                            <point x="0.0826087" y="0.317073" />
+                            <point x="0.497826" y="0.00813008" />
+                            <point x="0.915217" y="0.317073" />
+                            <point x="0.921739" y="0.504065" />
+                            <point x="0.952174" y="0.829268" />
+                            <point x="0.497826" y="0.609756" />
+                            <point x="0.0434783" y="0.837398" />
+                            <point x="0.0782609" y="0.504065" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501089" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\gameover.png">
+                        <collision-poly>
+                            <point x="0.0827887" y="0.311475" />
+                            <point x="0.498911" y="0.00819672" />
+                            <point x="0.917211" y="0.311475" />
+                            <point x="0.923747" y="0.5" />
+                            <point x="0.954248" y="0.827869" />
+                            <point x="0.498911" y="0.606557" />
+                            <point x="0.043573" y="0.836066" />
+                            <point x="0.0784314" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Restart" sid="1993961540374373">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4950201095794643" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\gui\button\Button_75.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\gui\button\Button_77.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="5445525610048254">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Sprite" sid="8238197090129584">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4060084045392339" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Window2" sid="7082705867709681">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9438259328272522" speed="5">
+                    <frame duration="1" hotspotX="0.500829" hotspotY="0.501171" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\Window.png">
+                        <collision-poly>
+                            <point x="0.0116086" y="0.0163934" />
+                            <point x="0.499171" y="0.00234192" />
+                            <point x="0.985075" y="0.0210773" />
+                            <point x="0.980099" y="0.971897" />
+                            <point x="0.0165837" y="0.976581" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_" sid="1764761584784008">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1999569010142761" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\gui\widow\Window - Copy_09.png">
+                        <collision-poly>
+                            <point x="0.105442" y="0.319588" />
+                            <point x="0.5" y="0.0103093" />
+                            <point x="0.894558" y="0.319588" />
+                            <point x="0.92517" y="0.494845" />
+                            <point x="0.942177" y="0.824742" />
+                            <point x="0.5" y="0.618557" />
+                            <point x="0.0578231" y="0.824742" />
+                            <point x="0.0748299" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_2" sid="3703429165879538">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5780337851104913" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\gui\widow\Window - Copy_03.png">
+                        <collision-poly>
+                            <point x="0.059322" y="0.184211" />
+                            <point x="0.5" y="0.157895" />
+                            <point x="0.915254" y="0.263158" />
+                            <point x="0.957627" y="0.5" />
+                            <point x="0.966102" y="0.894737" />
+                            <point x="0.0338983" y="0.894737" />
+                            <point x="0.0254237" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WindowCopy_3" sid="8074308997133318">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2622090924143695" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\gui\widow\Window - Copy_02.png">
+                        <collision-poly>
+                            <point x="0.0113636" y="0.0263158" />
+                            <point x="0.5" y="0.394737" />
+                            <point x="0.965909" y="0.0789474" />
+                            <point x="0.977273" y="0.5" />
+                            <point x="0.965909" y="0.921053" />
+                            <point x="0.5" y="0.973684" />
+                            <point x="0.0340909" y="0.921053" />
+                            <point x="0.0113636" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonLevel" sid="2489082644822205">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="lev" sid="8548308174596383" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9265853573891846" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\level select\Button_03.png">
+                        <collision-poly>
+                            <point x="0.0791367" y="0.0758621" />
+                            <point x="0.496403" y="0.00689655" />
+                            <point x="0.906475" y="0.0896552" />
+                            <point x="0.971223" y="0.496552" />
+                            <point x="0.892086" y="0.896552" />
+                            <point x="0.496403" y="0.944828" />
+                            <point x="0.0935252" y="0.910345" />
+                            <point x="0.00719424" y="0.496552" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\level select\Button_05.png">
+                        <collision-poly>
+                            <point x="0.0724638" y="0.0699301" />
+                            <point x="0.5" y="0" />
+                            <point x="0.905797" y="0.0909091" />
+                            <point x="0.971014" y="0.496504" />
+                            <point x="0.891304" y="0.895105" />
+                            <point x="0.5" y="0.951049" />
+                            <point x="0.0869565" y="0.916084" />
+                            <point x="0.00724638" y="0.496504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont2" sid="2733405169043853">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\asus\Desktop\Asset\Impact_Regular.png" />
+        </object-type>
+        <object-type name="SelecLevel" sid="6456626724084588">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7764113422833949" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\gui\button\Button_47.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0.0104167" />
+                            <point x="0.902174" y="0.09375" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0869565" y="0.916667" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\gui\button\Button_49 - Copy.png">
+                        <collision-poly>
+                            <point x="0.0752688" y="0.0729167" />
+                            <point x="0.494624" y="0.0104167" />
+                            <point x="0.903226" y="0.09375" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.892473" y="0.895833" />
+                            <point x="0.494624" y="0.947917" />
+                            <point x="0.0967742" y="0.90625" />
+                            <point x="0.0107527" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont3" sid="7879885644070375">
+            <plugin id="Spritefont2" />
+            <texture original-source="C:\Users\asus\Desktop\Asset\Impact_Regular.png" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Logik Stage 1.xml</event-sheet>
+        <event-sheet>Menu Logik.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Touch" uid="79">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

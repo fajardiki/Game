@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu Logik</name>
+    <events>
+        <variable constant="0" name="Level" sid="284708140848652" static="0" type="number">1</variable>
+        <event-block sid="2643043309262242">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="387684621101513" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9676964900127163">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9992449293782837" type="ButtonLevel">
+                            <param id="0" name="Instance variable">lev</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">Level</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="1020356137543986" type="ButtonLevel">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="0" name="Spawn another object" sid="6936755230497001" type="ButtonLevel">
+                            <param id="0" name="Object">SpriteFont2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4230997434926017" type="SpriteFont2">
+                            <param id="0" name="Text">ButtonLevel.lev</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5721639442451566">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="2703607188997139" type="ButtonLevel">
+                            <param id="0" name="Instance variable">lev</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Level</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="9801268315189341" type="ButtonLevel">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5446662443674159">
+            <conditions>
+                <condition id="17" name="On tap object" sid="154007137389921" type="Touch">
+                    <param id="0" name="Object">ButtonLevel</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="8752002835780689" type="ButtonLevel">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="2547888743530502" type="System">
+                    <param id="0" name="Layout">str(ButtonLevel.lev)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1230819323993782">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="7585802301436485" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5037119315010928">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8634578085275542" type="System">
+                            <param id="0" name="First value">LayoutName</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">Level</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8950726092516119" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">LayoutName</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
