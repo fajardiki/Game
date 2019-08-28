@@ -306,63 +306,73 @@
                 <event-block sid="5821524574471549">
                     <conditions>
                         <condition id="17" name="On tap object" sid="889763814918869" type="Touch">
-                            <param id="0" name="Object">Restart</param>
+                            <param id="0" name="Object">jwb1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="5684733667081845" type="Restart">
-                            <param id="0" name="Frame number">1</param>
+                        <action id="-4" name="Set layer visible" sid="5780286840950012" type="System">
+                            <param id="0" name="Layer">&quot;Salah&quot;</param>
+                            <param id="1" name="Visibility">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="1328252868863975" type="System">
+                        <action id="-16" name="Wait" sid="4120367142575802" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="2429940801999358" type="System">
+                            <param id="0" name="Layer">&quot;Salah&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8072643603321521" type="System">
                             <param id="0" name="Seconds">0.2</param>
                         </action>
-                        <action id="5" name="Set frame" sid="2310111571074161" type="Restart">
-                            <param id="0" name="Frame number">2</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="5034375150212026" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="7982438886112059" type="System">
-                            <param id="0" name="Variable">playernyawa</param>
-                            <param id="1" name="Value">9</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="8726109811534372" type="System">
-                            <param id="0" name="Variable">koin</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-26" name="Restart layout" sid="5658211011975315" type="System" />
+                        <action id="-26" name="Restart layout" sid="1976506660513655" type="System" />
                     </actions>
                 </event-block>
                 <event-block sid="1510590797756112">
                     <conditions>
                         <condition id="17" name="On tap object" sid="9492461333836686" type="Touch">
-                            <param id="0" name="Object">SelecLevel</param>
+                            <param id="0" name="Object">jwb2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="5" name="Set frame" sid="6264560248157784" type="SelecLevel">
-                            <param id="0" name="Frame number">1</param>
+                        <action id="-4" name="Set layer visible" sid="3684713968579185" type="System">
+                            <param id="0" name="Layer">&quot;Popup&quot;</param>
+                            <param id="1" name="Visibility">1</param>
                         </action>
-                        <action id="-16" name="Wait" sid="5803417753962217" type="System">
+                        <action id="5" name="Set frame" sid="9202482795784953" type="complete">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="2047210764788265" type="System">
+                            <param id="0" name="Layer">&quot;Pertanyaan&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4435608296442692" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="469175112431576">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="2988338763333313" type="Touch">
+                            <param id="0" name="Object">jwb3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="1898848709813583" type="System">
+                            <param id="0" name="Layer">&quot;Salah&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7870590485743485" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="3788654479862437" type="System">
+                            <param id="0" name="Layer">&quot;Salah&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8764455628613945" type="System">
                             <param id="0" name="Seconds">0.2</param>
                         </action>
-                        <action id="5" name="Set frame" sid="8692315899276735" type="SelecLevel">
-                            <param id="0" name="Frame number">2</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="8115263902259997" type="System">
-                            <param id="0" name="Seconds">0.2</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="5882972981967149" type="System">
-                            <param id="0" name="Variable">playernyawa</param>
-                            <param id="1" name="Value">9</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="8610083407091361" type="System">
-                            <param id="0" name="Variable">koin</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="4734555500711123" type="System">
-                            <param id="0" name="Layout">Level</param>
-                        </action>
+                        <action id="-26" name="Restart layout" sid="3874893904834462" type="System" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -374,6 +384,17 @@
             <actions>
                 <action id="-4" name="Set layer visible" sid="630753127589006" type="System">
                     <param id="0" name="Layer">&quot;Popup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1554832318850943">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4030412499417532" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="6174066637349694" type="System">
+                    <param id="0" name="Layer">&quot;Pertanyaan&quot;</param>
                     <param id="1" name="Visibility">0</param>
                 </action>
             </actions>
@@ -393,11 +414,8 @@
                     <param id="0" name="Seconds">1.0</param>
                 </action>
                 <action id="-4" name="Set layer visible" sid="4214016362186484" type="System">
-                    <param id="0" name="Layer">&quot;Popup&quot;</param>
+                    <param id="0" name="Layer">&quot;Pertanyaan&quot;</param>
                     <param id="1" name="Visibility">1</param>
-                </action>
-                <action id="5" name="Set frame" sid="3696395284964666" type="complete">
-                    <param id="0" name="Frame number">0</param>
                 </action>
             </actions>
         </event-block>

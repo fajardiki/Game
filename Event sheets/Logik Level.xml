@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Logik Level</name>
     <events>
-        <variable constant="0" name="Level" sid="284708140848652" static="0" type="number">3</variable>
+        <variable constant="0" name="Level" sid="284708140848652" static="0" type="number">1</variable>
         <event-block sid="2643043309262242">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="387684621101513" type="System" />
@@ -61,6 +61,10 @@
             <actions>
                 <action id="-25" name="Go to layout (by name)" sid="2547888743530502" type="System">
                     <param id="0" name="Layout">str(ButtonLevel.lev)</param>
+                </action>
+                <action id="-12" name="Set group active" sid="7039769212236981" type="System">
+                    <param id="0" name="Group name">&quot;Player&quot;</param>
+                    <param id="1" name="State">1</param>
                 </action>
             </actions>
         </event-block>
