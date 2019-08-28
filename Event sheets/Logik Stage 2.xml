@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Logik Stage 2</name>
+    <events>
+        <event-block sid="6405949707159198">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="6028092934766793" type="Berdiri" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="706184495183348" type="Berdiri">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6113947183447821">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="2175809609172856" type="Berdiri" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3371178512525001" type="Berdiri">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3742158998768764">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="9006693076496803" type="Berdiri" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1209711728104097" type="Berdiri">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5695389412380583">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="5736149960629777" type="Berdiri" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3121031577064025">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="3611365131306974" type="Berdiri" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="2046557676540694" type="Berdiri">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="343509947186459">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="3202079890444401" type="Berdiri" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3638062992023599" type="Berdiri">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="67025480824658">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1023644197934388" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="6946281712868398" type="Berdiri">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8144331760246691">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3074534754430631" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="6618957794960836" type="Berdiri">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -10,10 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">1</layout>
-        <layout order="2">Menu</layout>
-        <event-sheet active="1" order="1">Logik Stage 1</event-sheet>
-        <event-sheet order="3">Menu Logik</event-sheet>
+        <layout order="2">1</layout>
+        <layout order="0">Menu</layout>
+        <layout active="1" order="4">2</layout>
+        <event-sheet order="3">Logik Stage 1</event-sheet>
+        <event-sheet order="1">Menu Logik</event-sheet>
+        <event-sheet order="5">Logik Stage 2</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -67,5 +69,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/WindowCopy_3/" />
         <folder expanded="1" path="animation-folder/ButtonLevel/" />
         <folder expanded="1" path="animation-folder/SelecLevel/" />
+        <folder expanded="1" path="animation-folder/tileBlue_5/" />
+        <folder expanded="1" path="animation-folder/tileBlue_11/" />
+        <folder expanded="1" path="animation-folder/tileBlue_14/" />
+        <folder expanded="1" path="animation-folder/tileBlue_21/" />
+        <folder expanded="1" path="animation-folder/tileBlue_22/" />
+        <folder expanded="1" path="animation-folder/Berdiri/" />
+        <folder expanded="1" path="animation-folder/tileBlue_2/" />
+        <folder expanded="1" path="animation-folder/tileBlue_26/" />
+        <folder expanded="1" path="animation-folder/tileBlue_25/" />
+        <folder expanded="1" path="animation-folder/Jatuh/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/bee/" />
     </folders-expanded>
 </c2uistate>
