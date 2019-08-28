@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Logik Level</name>
     <events>
-        <variable constant="0" name="Level" sid="284708140848652" static="0" type="number">1</variable>
+        <variable constant="0" name="Level" sid="284708140848652" static="0" type="number">3</variable>
         <event-block sid="2643043309262242">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="387684621101513" type="System" />

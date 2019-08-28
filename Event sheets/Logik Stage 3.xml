@@ -15,7 +15,7 @@
                     <param id="1" name="From">1</param>
                 </action>
                 <action id="-16" name="Wait" sid="9687390129382836" type="System">
-                    <param id="0" name="Seconds">0.2</param>
+                    <param id="0" name="Seconds">0.1</param>
                 </action>
                 <action behavior="Platform" id="7" name="Simulate control" sid="5337416723727138" type="Player">
                     <param id="0" name="Control">2</param>
@@ -173,7 +173,7 @@
             </conditions>
             <actions>
                 <action id="-3" name="Create object" sid="9474649442809962" type="System">
-                    <param id="0" name="Object to create">gold_</param>
+                    <param id="0" name="Object to create">gold2</param>
                     <param id="1" name="Layer">&quot;player&quot;</param>
                     <param id="2" name="X">ground_grass.X</param>
                     <param id="3" name="Y">ground_grass.Y-60*loopindex(&quot;i&quot;)</param>

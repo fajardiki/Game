@@ -68,6 +68,42 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="8886089506367707">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="876352362199075" type="Berdiri">
+                    <param id="0" name="Object">barnacle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="2197815091116562" type="Berdiri">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="5982180639886699" type="System">
+                    <param id="0" name="Variable">playernyawa2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5276463389943771">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="788570166343233" type="Berdiri">
+                    <param id="0" name="Object">wingMan</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="340786271600012" type="Berdiri">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="820123980497624" type="System">
+                    <param id="0" name="Variable">playernyawa2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="67025480824658">
             <conditions>
                 <condition id="0" name="On key pressed" sid="1023644197934388" type="Keyboard">
@@ -91,6 +127,56 @@
                     <param id="0" name="State">0</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="935450736246527">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="208319876285932" type="Berdiri">
+                    <param id="0" name="Object">gold2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4268643885066014" type="gold2" />
+                <action id="-10" name="Add to" sid="7564098579475877" type="System">
+                    <param id="0" name="Variable">koin2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8774308725372047">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7470766635896982" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6097463532732421">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="5243151106631224" type="SpriteFont">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;koin2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="6481724865553374" type="SpriteFont">
+                            <param id="0" name="Text">koin2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4347912386297574">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3254548045608529" type="SpriteFont">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;nyawa2&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="9215354223895669" type="SpriteFont">
+                            <param id="0" name="Text">playernyawa2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

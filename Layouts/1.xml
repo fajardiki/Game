@@ -503,7 +503,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="gold_" uid="55">
+                <instance type="gold2" uid="55">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -513,7 +513,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>567</x>
+                        <x>587</x>
                         <y>195</y>
                         <z>0</z>
                         <width>32</width>
@@ -525,7 +525,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="gold_" uid="56">
+                <instance type="gold2" uid="56">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -535,7 +535,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>607</x>
+                        <x>627</x>
                         <y>194</y>
                         <z>0</z>
                         <width>32</width>
@@ -547,7 +547,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="gold_" uid="57">
+                <instance type="gold2" uid="58">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -557,29 +557,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>646</x>
-                        <y>194</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="gold_" uid="58">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>2464</x>
+                        <x>2483</x>
                         <y>444</y>
                         <z>0</z>
                         <width>32</width>
@@ -591,7 +569,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="gold_" uid="59">
+                <instance type="gold2" uid="59">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -601,7 +579,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2496</x>
+                        <x>2515</x>
                         <y>444</y>
                         <z>0</z>
                         <width>32</width>
@@ -613,7 +591,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="gold_" uid="60">
+                <instance type="gold2" uid="61">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -623,29 +601,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2528</x>
-                        <y>444</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="gold_" uid="61">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>3584</x>
+                        <x>3603</x>
                         <y>384</y>
                         <z>0</z>
                         <width>32</width>
@@ -657,7 +613,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="gold_" uid="62">
+                <instance type="gold2" uid="62">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -667,7 +623,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3616</x>
+                        <x>3635</x>
                         <y>384</y>
                         <z>0</z>
                         <width>32</width>
@@ -679,7 +635,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="gold_" uid="63">
+                <instance type="gold2" uid="70">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -689,29 +645,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3648</x>
-                        <y>384</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="gold_" uid="70">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>4448</x>
+                        <x>4465</x>
                         <y>416</y>
                         <z>0</z>
                         <width>32</width>
@@ -723,7 +657,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="gold_" uid="71">
+                <instance type="gold2" uid="71">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -733,29 +667,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4480</x>
-                        <y>416</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="gold_" uid="72">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>4512</x>
+                        <x>4497</x>
                         <y>416</y>
                         <z>0</z>
                         <width>32</width>
@@ -1575,7 +1487,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>4768</x>
-                        <y>561</y>
+                        <y>560</y>
                         <z>0</z>
                         <width>128</width>
                         <height>96</height>

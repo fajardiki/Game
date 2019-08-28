@@ -128,24 +128,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="137188952996711">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="3101979746634709" type="Player_stand">
-                    <param id="0" name="Object">switchRed</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action behavior="Flash" id="0" name="Flash" sid="1712245338500816" type="Player_stand">
-                    <param id="0" name="&apos;On&apos; time">0.2</param>
-                    <param id="1" name="&apos;Off&apos; time">0.2</param>
-                    <param id="2" name="Duration">1.0</param>
-                </action>
-                <action id="-11" name="Subtract from" sid="739622293873041" type="System">
-                    <param id="0" name="Variable">playernyawa</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="530717674168933">
             <conditions>
                 <condition id="-4" name="Is outside layout" sid="1912864040494572" type="Player_stand" />
@@ -164,11 +146,11 @@
         <event-block sid="5020481635958907">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="5156269059532367" type="Player_stand">
-                    <param id="0" name="Object">gold_</param>
+                    <param id="0" name="Object">gold2</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-9" name="Destroy" sid="6237244960355213" type="gold_" />
+                <action id="-9" name="Destroy" sid="6237244960355213" type="gold2" />
                 <action id="-10" name="Add to" sid="54060600112567" type="System">
                     <param id="0" name="Variable">koin</param>
                     <param id="1" name="Value">1</param>
