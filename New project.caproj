@@ -29,8 +29,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>1138</width>
-        <height>640</height>
+        <width>480</width>
+        <height>854</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -1378,17 +1378,66 @@
             </behaviors>
             <texture original-source="D:\Game Construct\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_05.png" />
         </object-type>
+        <object-type name="bg_layer" sid="2105396750694726">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7328462941718552" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\construct 2\jumperpack_kenney\PNG\Background\bg_layer4.png">
+                        <collision-poly>
+                            <point x="0.612793" y="0.612793" />
+                            <point x="0.5" y="0.689453" />
+                            <point x="0.261719" y="0.738281" />
+                            <point x="0.669434" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.612793" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ground_grass" sid="1402192226344628">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="5258030059601095">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538826749005191" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\construct 2\jumperpack_kenney\PNG\Environment\ground_grass.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="7135446153007105">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="9893621333806002">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4677212922946854" speed="5">
+                    <frame duration="1" hotspotX="0.565543" hotspotY="0.494792" original-source="D:\construct 2\Player\Berdiri.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="5598032152454746" speed="5">
+                    <frame duration="1" hotspotX="0.501587" hotspotY="0.5" original-source="D:\construct 2\Player\Lompat.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Menu.xml</layout>
         <layout>1.xml</layout>
         <layout>2.xml</layout>
+        <layout>3.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Logik Stage 1.xml</event-sheet>
         <event-sheet>Menu Logik.xml</event-sheet>
         <event-sheet>Logik Stage 2.xml</event-sheet>
+        <event-sheet>Logik Stage 3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
