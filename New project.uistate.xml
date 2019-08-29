@@ -15,9 +15,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="4">1</layout>
         <layout order="6">2</layout>
         <layout order="8">3</layout>
-        <event-sheet order="1">Logik Menu</event-sheet>
+        <event-sheet active="1" order="1">Logik Menu</event-sheet>
         <event-sheet order="3">Logik Level</event-sheet>
-        <event-sheet active="1" order="5">Logik Stage 1</event-sheet>
+        <event-sheet order="5">Logik Stage 1</event-sheet>
         <event-sheet order="7">Logik Stage 2</event-sheet>
     </open-tabs>
     <properties>
@@ -105,5 +105,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Next/" />
         <folder expanded="1" path="animation-folder/raypasha/" />
         <folder expanded="1" path="animation-folder/cartoonschoolbuildingwithgreenyardvector/" />
+        <folder expanded="1" path="animation-folder/btnLagu/" />
     </folders-expanded>
 </c2uistate>
