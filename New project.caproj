@@ -1734,6 +1734,164 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="backgrounddd" sid="3679955798792979">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2086625557755002" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\game\backgrounddd.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cobalagi" sid="1515928341651035">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1983505441906226" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\game\cobalagi.png">
+                        <collision-poly>
+                            <point x="0.162109" y="0.162109" />
+                            <point x="0.5" y="0.0214844" />
+                            <point x="0.841797" y="0.158203" />
+                            <point x="0.988281" y="0.5" />
+                            <point x="0.847656" y="0.847656" />
+                            <point x="0.5" y="0.990234" />
+                            <point x="0.15625" y="0.84375" />
+                            <point x="0.0195313" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="IconSelanjutnya" sid="5885899240620933">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3788123332584191" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\game\Icon Selanjutnya.png">
+                        <collision-poly>
+                            <point x="0.152344" y="0.152344" />
+                            <point x="0.5" y="0.0078125" />
+                            <point x="0.847656" y="0.152344" />
+                            <point x="0.992188" y="0.5" />
+                            <point x="0.847656" y="0.847656" />
+                            <point x="0.5" y="0.992188" />
+                            <point x="0.152344" y="0.847656" />
+                            <point x="0.0078125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Logo_TebakGambar" sid="5222075740937885">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1875570867581752" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\game\Logo_TebakGambar.png">
+                        <collision-poly>
+                            <point x="0.239706" y="0.239706" />
+                            <point x="0.5" y="0.134804" />
+                            <point x="0.759314" y="0.240686" />
+                            <point x="0.877451" y="0.5" />
+                            <point x="0.768137" y="0.768137" />
+                            <point x="0.5" y="0.880882" />
+                            <point x="0.233333" y="0.766667" />
+                            <point x="0.128431" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ulabvr" sid="3189016391957003">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3814815189659967" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501873" original-source="D:\game\ulabvr.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.374532" />
+                            <point x="0.5" y="0.363296" />
+                            <point x="0.88" y="0.179775" />
+                            <point x="0.8425" y="0.764045" />
+                            <point x="0.5" y="0.928839" />
+                            <point x="0.1575" y="0.764045" />
+                            <point x="0.1375" y="0.498127" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hewanGajah" sid="9167197779114314">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7743370131146166" speed="5">
+                    <frame duration="1" hotspotX="0.501193" hotspotY="0.5" original-source="D:\game\hewan gajah.png">
+                        <collision-poly>
+                            <point x="0.0334129" y="0.028" />
+                            <point x="0.498807" y="0.242" />
+                            <point x="0.968974" y="0.5" />
+                            <point x="0.959427" y="0.966" />
+                            <point x="0.498807" y="0.974" />
+                            <point x="0.343675" y="0.712" />
+                            <point x="0.0906921" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tikusuz" sid="5499856813010581">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9098445986326715" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\game\tikusuz.png">
+                        <collision-poly>
+                            <point x="0.303488" y="0.3625" />
+                            <point x="0.5" y="0.279167" />
+                            <point x="0.75814" y="0.288889" />
+                            <point x="0.748837" y="0.5" />
+                            <point x="0.669767" y="0.605556" />
+                            <point x="0.5" y="0.526389" />
+                            <point x="0.32907" y="0.606944" />
+                            <point x="0.232558" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Centang" sid="4846850985604852">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6406687631988047" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\game\Centang.png">
+                        <collision-poly>
+                            <point x="0.177778" y="0.177778" />
+                            <point x="0.5" y="0.0444444" />
+                            <point x="0.822222" y="0.177778" />
+                            <point x="0.955556" y="0.5" />
+                            <point x="0.822222" y="0.822222" />
+                            <point x="0.5" y="0.954444" />
+                            <point x="0.177778" y="0.822222" />
+                            <point x="0.0444444" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tandaX" sid="9354955094374502">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5771779342339139" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\game\tanda x.png">
+                        <collision-poly>
+                            <point x="0.15625" y="0.15625" />
+                            <point x="0.5" y="0.0195313" />
+                            <point x="0.835938" y="0.164063" />
+                            <point x="0.964844" y="0.5" />
+                            <point x="0.828125" y="0.828125" />
+                            <point x="0.5" y="0.964844" />
+                            <point x="0.164063" y="0.835938" />
+                            <point x="0.0195313" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1742,6 +1900,7 @@
         <layout>1.xml</layout>
         <layout>2.xml</layout>
         <layout>3.xml</layout>
+        <layout>Kuis1.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Logik Stage 1.xml</event-sheet>
@@ -1749,6 +1908,7 @@
         <event-sheet>Logik Stage 2.xml</event-sheet>
         <event-sheet>Logik Menu.xml</event-sheet>
         <event-sheet>Logik Stage 3.xml</event-sheet>
+        <event-sheet>Logickuis1.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
