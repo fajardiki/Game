@@ -104,6 +104,21 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="9073520962077395">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="4746939742734514" type="Berdiri" />
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="3213869715641138" type="System">
+                    <param id="0" name="Variable">playernyawa2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="5802648676199226" type="Player_stand">
+                    <param id="0" name="Object">tileBlue_5</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="67025480824658">
             <conditions>
                 <condition id="0" name="On key pressed" sid="1023644197934388" type="Keyboard">
@@ -177,6 +192,136 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="2099202690698105">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6304052123964691" type="System">
+                    <param id="0" name="Variable">playernyawa2</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5693452598145105">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="6566803301556742" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="9348473462140221" type="Berdiri" />
+                        <action behavior="Platform" id="11" name="Set enabled" sid="6592893193810793" type="Player_stand">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="4656729740834451" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="725619985518077" type="System">
+                            <param id="0" name="Layer">&quot;Popup&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3355231197227529">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="7833586367435663" type="System">
+                    <param id="0" name="Layer">&quot;Popup&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9906654649513966">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="5107214276538228" type="Touch">
+                            <param id="0" name="Object">Restart</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="1297439351310592" type="Restart">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7920266929256891" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="7479181640822157" type="Restart">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5457359537331773" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9133317037976734" type="System">
+                            <param id="0" name="Variable">playernyawa2</param>
+                            <param id="1" name="Value">9</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5108559696075554" type="System">
+                            <param id="0" name="Variable">koin2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="5954097147999935" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="1005076287197758">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="5396846760362408" type="Touch">
+                            <param id="0" name="Object">SelecLevel</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="3338382386192107" type="SelecLevel">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="1881293748666641" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="2682990798728728" type="SelecLevel">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7324088702337127" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6975559718560486" type="System">
+                            <param id="0" name="Variable">playernyawa2</param>
+                            <param id="1" name="Value">9</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1250869042268856" type="System">
+                            <param id="0" name="Variable">koin2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="2672178070727484" type="System">
+                            <param id="0" name="Layout">Level</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8839718328299738">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2804646732693377" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="3854205570062999" type="System">
+                    <param id="0" name="Layer">&quot;Popup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8922448073442953">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8810052618597885" type="Berdiri">
+                    <param id="0" name="Object">Air1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="3772001179921573" type="System">
+                    <param id="0" name="Variable">playernyawa2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="6612332017993551" type="Berdiri">
+                    <param id="0" name="X">992</param>
+                    <param id="1" name="Y">448</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

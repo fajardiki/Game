@@ -1165,7 +1165,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TiledBackground4" sid="3610969528164428">
+        <object-type name="Air1" sid="3610969528164428">
             <plugin id="TiledBg" />
             <texture original-source="D:\Game Construct\Asset\Dekor\17.png" />
         </object-type>
@@ -1636,6 +1636,50 @@
         </object-type>
         <object-type name="Audio" sid="1772925247414094">
             <plugin id="Audio" />
+        </object-type>
+        <object-type name="tileBlue_" sid="6964003767069539">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2312514205422718" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_01.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.08" />
+                            <point x="1" y="0.5" />
+                            <point x="0.90625" y="0.88" />
+                            <point x="0.03125" y="0.96" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tileBlue_3" sid="4222898794372648">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="788019573257738" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_06.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.9375" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pijakan" sid="8028426296272494">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5963250204176915">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\asus\Documents\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_06.png" />
         </object-type>
     </object-folder>
     <families />
