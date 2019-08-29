@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Logik Stage 2</name>
     <events>
-        <variable constant="0" name="playernyawa2" sid="224500465591037" static="0" type="number">9</variable>
+        <variable constant="0" name="playernyawa2" sid="224500465591037" static="0" type="number">5</variable>
         <variable constant="0" name="koin2" sid="4141192325245092" static="0" type="number">0</variable>
         <event-block sid="6405949707159198">
             <conditions>
@@ -237,7 +237,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="9133317037976734" type="System">
                             <param id="0" name="Variable">playernyawa2</param>
-                            <param id="1" name="Value">9</param>
+                            <param id="1" name="Value">5</param>
                         </action>
                         <action id="-9" name="Set value" sid="5108559696075554" type="System">
                             <param id="0" name="Variable">koin2</param>
@@ -267,7 +267,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="6975559718560486" type="System">
                             <param id="0" name="Variable">playernyawa2</param>
-                            <param id="1" name="Value">9</param>
+                            <param id="1" name="Value">5</param>
                         </action>
                         <action id="-9" name="Set value" sid="1250869042268856" type="System">
                             <param id="0" name="Variable">koin2</param>
@@ -276,6 +276,112 @@
                         <action id="-2" name="Go to layout" sid="2672178070727484" type="System">
                             <param id="0" name="Layout">Level</param>
                         </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6451571153172155">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="4816183522285776" type="Touch">
+                            <param id="0" name="Object">Next</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="6455845166233911" type="Next">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="19169965590778" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="93801761949388" type="Next">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="3720319025988481" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="7238807577115261" type="System">
+                            <param id="0" name="Layout">str(Level)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="9734284691782897">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="7012754968009974" type="System">
+                    <param id="0" name="Layer">&quot;Pertanyaan&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8143565393934647">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="8113859207753393" type="Touch">
+                            <param id="0" name="Object">jwb1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="5337423105817679" type="System">
+                            <param id="0" name="Layer">&quot;Salah&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="9694964662534952" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="436713642182651" type="System">
+                            <param id="0" name="Layer">&quot;Salah&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="2439174986735011" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="5056640052042185" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="7609448317214341">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="4497698439112127" type="Touch">
+                            <param id="0" name="Object">jwb2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="3849455663217031" type="System">
+                            <param id="0" name="Layer">&quot;Popup&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="6360737019775049" type="complete">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="8201186758596458" type="System">
+                            <param id="0" name="Layer">&quot;Pertanyaan&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5672840014680778" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3828315002100735">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="7692669014422293" type="Touch">
+                            <param id="0" name="Object">jwb3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="5699440421616642" type="System">
+                            <param id="0" name="Layer">&quot;Salah&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7293297557475752" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="5251630780004594" type="System">
+                            <param id="0" name="Layer">&quot;Salah&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8237954140129416" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="7182488127529119" type="System" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -287,6 +393,17 @@
             <actions>
                 <action id="-4" name="Set layer visible" sid="3854205570062999" type="System">
                     <param id="0" name="Layer">&quot;Popup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6372952212859419">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9920035077480108" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="3272572979065941" type="System">
+                    <param id="0" name="Layer">&quot;Pertanyaan&quot;</param>
                     <param id="1" name="Visibility">0</param>
                 </action>
             </actions>
@@ -325,5 +442,163 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="8131808647269795">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1040390818757925" type="Berdiri">
+                    <param id="0" name="Object">female_idle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="7499819824832998" type="System">
+                    <param id="0" name="Group name">&quot;Player2&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="8394214298382539" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="3508576108699207" type="System">
+                    <param id="0" name="Layer">&quot;Pertanyaan&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2422937859730266" type="Next">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="9498542880015407" title="Player2">
+            <sub-events>
+                <event-group description="" sid="5095842292593524" title="Player Animasi2">
+                    <sub-events>
+                        <event-block sid="4733208344987614">
+                            <conditions>
+                                <condition behavior="Platform" id="8" name="On moved" sid="4683701448092967" type="Berdiri" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="2655599124883285" type="Berdiri">
+                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8453063668956814">
+                            <conditions>
+                                <condition behavior="Platform" id="7" name="On stopped" sid="9579445042174073" type="Berdiri" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="6562317437513341" type="Berdiri">
+                                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5778899624145175">
+                            <conditions>
+                                <condition behavior="Platform" id="5" name="On jump" sid="5454512744808573" type="Berdiri" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="7253079953220288" type="Berdiri">
+                                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4364716442252025">
+                            <conditions>
+                                <condition behavior="Platform" id="9" name="On landed" sid="1597660410833547" type="Berdiri" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="7449139710366474">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" name="Is moving" sid="6629091678795577" type="Berdiri" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="336921938697431" type="Berdiri">
+                                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="1048730310700759">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="4256979938840522" type="Berdiri" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="7370761910977752" type="Berdiri">
+                                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="5629639108414205">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="3843177423947559" type="Keyboard">
+                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="6045258280042593" type="Berdiri">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9418932370970434">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="4238222695121255" type="Keyboard">
+                                    <param id="0" name="Key">37 (Left arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="7845740770745988" type="Berdiri">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="2030256352685104" title="Player Control2">
+                    <sub-events>
+                        <event-block sid="1368259291285648">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="1732396023667479" type="Keyboard">
+                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="5436879043491011" type="Berdiri">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6245220771710698">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="4942837340366542" type="Keyboard">
+                                    <param id="0" name="Key">37 (Left arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="5230407636456771" type="Berdiri">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8538958845175561">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="7619058125736838" type="Keyboard">
+                                    <param id="0" name="Key">38 (Up arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="6712095927406241" type="Berdiri">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

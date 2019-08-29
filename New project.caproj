@@ -1747,8 +1747,8 @@
         <event-sheet>Logik Stage 1.xml</event-sheet>
         <event-sheet>Logik Level.xml</event-sheet>
         <event-sheet>Logik Stage 2.xml</event-sheet>
-        <event-sheet>Logik Stage 3.xml</event-sheet>
         <event-sheet>Logik Menu.xml</event-sheet>
+        <event-sheet>Logik Stage 3.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
