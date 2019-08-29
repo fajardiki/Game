@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Logik Stage 1</name>
     <events>
-        <variable constant="0" name="playernyawa" sid="1388355311092996" static="0" type="number">9</variable>
+        <variable constant="0" name="playernyawa" sid="1388355311092996" static="0" type="number">5</variable>
         <variable constant="0" name="koin" sid="9747646541806967" static="0" type="number">0</variable>
         <event-block sid="8328968926621716">
             <conditions>
@@ -219,6 +219,7 @@
                             <param id="0" name="Layer">&quot;Popup&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
+                        <action id="2" name="Stop" sid="5547073891138223" type="Next" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -252,7 +253,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="8017178503238688" type="System">
                             <param id="0" name="Variable">playernyawa</param>
-                            <param id="1" name="Value">9</param>
+                            <param id="1" name="Value">5</param>
                         </action>
                         <action id="-9" name="Set value" sid="4314141234119723" type="System">
                             <param id="0" name="Variable">koin</param>
@@ -290,6 +291,30 @@
                         </action>
                         <action id="-2" name="Go to layout" sid="968578881812232" type="System">
                             <param id="0" name="Layout">Level</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="139904973471251">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="8085651858579728" type="Touch">
+                            <param id="0" name="Object">Next</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="5525492092871209" type="Next">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="2223456375466877" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="5508001573794683" type="Next">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="1995462717789343" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="2383368904567487" type="System">
+                            <param id="0" name="Layout">str(Level)</param>
                         </action>
                     </actions>
                 </event-block>

@@ -104,21 +104,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="9073520962077395">
-            <conditions>
-                <condition id="-4" name="Is outside layout" sid="4746939742734514" type="Berdiri" />
-            </conditions>
-            <actions>
-                <action id="-11" name="Subtract from" sid="3213869715641138" type="System">
-                    <param id="0" name="Variable">playernyawa2</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-4" name="Set position to another object" sid="5802648676199226" type="Player_stand">
-                    <param id="0" name="Object">tileBlue_5</param>
-                    <param id="1" name="Image point (optional)">0</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="67025480824658">
             <conditions>
                 <condition id="0" name="On key pressed" sid="1023644197934388" type="Keyboard">
@@ -320,6 +305,23 @@
                 <action id="-3" name="Set position" sid="6612332017993551" type="Berdiri">
                     <param id="0" name="X">992</param>
                     <param id="1" name="Y">448</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6344313774986395">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3457534437104906" type="Berdiri">
+                    <param id="0" name="Object">Air2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="6790473446138343" type="System">
+                    <param id="0" name="Variable">playernyawa2</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="165906035727572" type="Berdiri">
+                    <param id="0" name="X">2880</param>
+                    <param id="1" name="Y">320</param>
                 </action>
             </actions>
         </event-block>

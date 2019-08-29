@@ -1681,6 +1681,59 @@
             </behaviors>
             <texture original-source="C:\Users\asus\Documents\Game\Platformer\Abstract Platformer\PNG\Tiles\Blue tiles\tileBlue_06.png" />
         </object-type>
+        <object-type name="Sprite2" sid="9399616352149422">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1950503976677744" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\Users\asus\Desktop\Asset\Dekor\17.png">
+                        <collision-poly>
+                            <point x="0.132813" y="0.171717" />
+                            <point x="0.5" y="0.0707071" />
+                            <point x="0.953125" y="0.0606061" />
+                            <point x="1" y="0.494949" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.494949" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Air2" sid="5998266587784168">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\asus\Desktop\Asset\Dekor\17.png" />
+        </object-type>
+        <object-type name="Next" sid="3867423057657429">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5534655239888363" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\gui\button\Button_06.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0" />
+                            <point x="0.902174" y="0.09375" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0869565" y="0.916667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\asus\Documents\Game\Platformer\GUI\gui\button\Button_08.png">
+                        <collision-poly>
+                            <point x="0.076087" y="0.0729167" />
+                            <point x="0.5" y="0" />
+                            <point x="0.913043" y="0.0833333" />
+                            <point x="0.978261" y="0.5" />
+                            <point x="0.891304" y="0.895833" />
+                            <point x="0.5" y="0.947917" />
+                            <point x="0.0978261" y="0.90625" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
