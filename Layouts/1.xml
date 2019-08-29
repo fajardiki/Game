@@ -1865,7 +1865,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>574</x>
+                        <x>469</x>
                         <y>479</y>
                         <z>0</z>
                         <width>92</width>
@@ -1942,7 +1942,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>466</x>
+                        <x>361</x>
                         <y>480</y>
                         <z>0</z>
                         <width>92</width>
@@ -2011,7 +2011,7 @@
                 </instance>
                 <instance type="Next" uid="192">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -2019,7 +2019,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>681</x>
+                        <x>764</x>
                         <y>476</y>
                         <z>0</z>
                         <width>92</width>

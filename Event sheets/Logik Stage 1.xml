@@ -219,7 +219,6 @@
                             <param id="0" name="Layer">&quot;Popup&quot;</param>
                             <param id="1" name="Visibility">1</param>
                         </action>
-                        <action id="2" name="Stop" sid="5547073891138223" type="Next" />
                     </actions>
                 </event-block>
             </sub-events>
@@ -283,7 +282,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="708062697495833" type="System">
                             <param id="0" name="Variable">playernyawa</param>
-                            <param id="1" name="Value">9</param>
+                            <param id="1" name="Value">5</param>
                         </action>
                         <action id="-9" name="Set value" sid="6877548240331637" type="System">
                             <param id="0" name="Variable">koin</param>
@@ -441,6 +440,9 @@
                 <action id="-4" name="Set layer visible" sid="4214016362186484" type="System">
                     <param id="0" name="Layer">&quot;Pertanyaan&quot;</param>
                     <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="1090930756913236" type="Next">
+                    <param id="0" name="Visibility">1</param>
                 </action>
             </actions>
         </event-block>
