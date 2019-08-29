@@ -15,27 +15,29 @@
                 <action id="-2" name="Go to layout" sid="3925977122434856" type="System">
                     <param id="0" name="Layout">Level</param>
                 </action>
-                <action id="33" name="Stop all" sid="7916800074243841" type="Audio" />
+                <action id="6" name="Stop" sid="99485042253287" type="Audio">
+                    <param id="0" name="Tag">&quot;musik&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="2151060699239357" type="Audio">
+                    <param id="0" name="Audio file">click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
-            <sub-events>
-                <event-block sid="8359697740865451">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="6864511188415838" type="System">
-                            <param id="0" name="Variable">Music</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">&quot;on&quot;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="3185820988811659" type="Audio">
-                            <param id="0" name="Audio file">Terima Kasih Guruku - Abahe Neswa - Free Download, Borrow, and Streaming - Internet Archive</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">-10</param>
-                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
+        </event-block>
+        <event-block sid="6137562981564218">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="759980364080352" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="3486987742935006" type="Audio">
+                    <param id="0" name="Audio file">Terima Kasih Guruku - Abahe Neswa - Free Download, Borrow, and Streaming - Internet Archive</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
