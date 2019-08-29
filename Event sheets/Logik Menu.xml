@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Logik Menu</name>
     <events>
+        <variable constant="0" name="Music" sid="7656644069522183" static="0" type="text">on</variable>
+        <variable constant="0" name="Sound" sid="2539704503908602" static="0" type="text">on</variable>
         <event-block sid="8786923749308285">
             <conditions>
                 <condition id="17" name="On tap object" sid="9336287063012339" type="Touch">
@@ -13,7 +15,27 @@
                 <action id="-2" name="Go to layout" sid="3925977122434856" type="System">
                     <param id="0" name="Layout">Level</param>
                 </action>
+                <action id="33" name="Stop all" sid="7916800074243841" type="Audio" />
             </actions>
+            <sub-events>
+                <event-block sid="8359697740865451">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6864511188415838" type="System">
+                            <param id="0" name="Variable">Music</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;on&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="3185820988811659" type="Audio">
+                            <param id="0" name="Audio file">Terima Kasih Guruku - Abahe Neswa - Free Download, Borrow, and Streaming - Internet Archive</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

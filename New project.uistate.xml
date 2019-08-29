@@ -10,17 +10,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Menu</layout>
+        <layout active="1" order="0">Menu</layout>
         <layout order="2">Level</layout>
         <layout order="4">1</layout>
         <layout order="6">2</layout>
         <layout order="8">3</layout>
-        <layout order="9">Kuis1</layout>
         <event-sheet order="1">Logik Menu</event-sheet>
         <event-sheet order="3">Logik Level</event-sheet>
         <event-sheet order="5">Logik Stage 1</event-sheet>
-        <event-sheet active="1" order="7">Logik Stage 2</event-sheet>
-        <event-sheet order="10">Logickuis1</event-sheet>
+        <event-sheet order="7">Logik Stage 2</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -34,7 +32,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/langit/" />
@@ -105,14 +103,5 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/tileBlue_3/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Next/" />
-        <folder expanded="1" path="animation-folder/backgrounddd/" />
-        <folder expanded="1" path="animation-folder/cobalagi/" />
-        <folder expanded="1" path="animation-folder/IconSelanjutnya/" />
-        <folder expanded="1" path="animation-folder/Logo_TebakGambar/" />
-        <folder expanded="1" path="animation-folder/ulabvr/" />
-        <folder expanded="1" path="animation-folder/hewanGajah/" />
-        <folder expanded="1" path="animation-folder/tikusuz/" />
-        <folder expanded="1" path="animation-folder/Centang/" />
-        <folder expanded="1" path="animation-folder/tandaX/" />
     </folders-expanded>
 </c2uistate>
