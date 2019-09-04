@@ -266,7 +266,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <lev>99</lev>
+                        <lev>5</lev>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -291,7 +291,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <lev>99</lev>
+                        <lev>6</lev>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -316,7 +316,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <lev>99</lev>
+                        <lev>7</lev>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -341,7 +341,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <lev>99</lev>
+                        <lev>8</lev>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

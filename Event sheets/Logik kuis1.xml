@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Logik kuis1</name>
+    <events>
+        <event-block sid="4510422006965595">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9342146623179169" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9021397980630802" type="Audio">
+                    <param id="0" name="Audio file">Suara</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;soal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3403043947125229">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2820522466430961" type="Touch">
+                    <param id="0" name="Object">tikusuz</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="1140112281441425" type="Audio">
+                    <param id="0" name="Audio file">Benar</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="6427129341564754" type="Centang2">
+                    <param id="0" name="X">594</param>
+                    <param id="1" name="Y">263</param>
+                </action>
+                <action id="-9" name="Destroy" sid="6503332932843633" type="hewanGajah2" />
+                <action id="-9" name="Destroy" sid="8434547962730053" type="tikusuz" />
+                <action id="-9" name="Destroy" sid="621331709577293" type="ulabvr2" />
+                <action id="-3" name="Set position" sid="1546423058013512" type="IconSelanjutnya2">
+                    <param id="0" name="X">1014</param>
+                    <param id="1" name="Y">525</param>
+                </action>
+                <action id="6" name="Stop" sid="7254814122411109" type="Audio">
+                    <param id="0" name="Tag">&quot;soal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6601547638220014">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7731565589816097" type="Touch">
+                    <param id="0" name="Object">hewanGajah2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2388151042385087" type="Audio">
+                    <param id="0" name="Audio file">Salah</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="2121237834924364" type="tandaX2">
+                    <param id="0" name="X">594</param>
+                    <param id="1" name="Y">263</param>
+                </action>
+                <action id="-9" name="Destroy" sid="2190518751674815" type="tikusuz" />
+                <action id="-9" name="Destroy" sid="640438709484918" type="hewanGajah2" />
+                <action id="-9" name="Destroy" sid="2867768308646038" type="ulabvr2" />
+                <action id="-3" name="Set position" sid="1884631361436025" type="cobalagi2">
+                    <param id="0" name="X">111</param>
+                    <param id="1" name="Y">522</param>
+                </action>
+                <action id="6" name="Stop" sid="1145882942555712" type="Audio">
+                    <param id="0" name="Tag">&quot;soal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2132046027743632">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3191723974803816" type="Touch">
+                    <param id="0" name="Object">ulabvr2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4079341271227138" type="Audio">
+                    <param id="0" name="Audio file">Salah</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-3" name="Set position" sid="9441365902682756" type="tandaX2">
+                    <param id="0" name="X">594</param>
+                    <param id="1" name="Y">263</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7132776325870478" type="hewanGajah2" />
+                <action id="-9" name="Destroy" sid="3906585257471814" type="ulabvr2" />
+                <action id="-3" name="Set position" sid="6253548749378364" type="cobalagi2">
+                    <param id="0" name="X">111</param>
+                    <param id="1" name="Y">522</param>
+                </action>
+                <action id="-9" name="Destroy" sid="7761618097175741" type="tikusuz" />
+                <action id="6" name="Stop" sid="5346439880913134" type="Audio">
+                    <param id="0" name="Tag">&quot;soal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1474496457077734">
+            <conditions>
+                <condition id="3" name="On touched object" sid="909624143095839" type="Touch">
+                    <param id="0" name="Object">cobalagi2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="3161121442192889" type="Audio">
+                    <param id="0" name="Audio file">CobaLagi</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="9066354115616316" type="System">
+                    <param id="0" name="Layout">Kuis1</param>
+                </action>
+                <action id="6" name="Stop" sid="4291785557056978" type="Audio">
+                    <param id="0" name="Tag">&quot;soal&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8021633082497574">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6357839302792842" type="Touch">
+                    <param id="0" name="Object">IconSelanjutnya2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="3095638079695256" type="System">
+                    <param id="0" name="Variable">Level</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="3790822347642146" type="System">
+                    <param id="0" name="Layout">str(Level)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

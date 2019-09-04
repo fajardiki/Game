@@ -1,0 +1,589 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Logik Stage 5</name>
+    <events>
+        <variable constant="0" name="playernyawa3" sid="3142420984663521" static="0" type="number">5</variable>
+        <variable constant="0" name="koin3" sid="4264052055439422" static="0" type="number">0</variable>
+        <event-block sid="112602471006915">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="3657237184742891" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9986853754532691" type="Audio">
+                    <param id="0" name="Audio file">Terima Kasih Guruku - Abahe Neswa - Free Download, Borrow, and Streaming - Internet Archive</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3392671219101703">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="7432644453480281" type="Diki" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7741169012318078" type="Diki">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7924354100872231">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="7079016325662844" type="Diki" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3059052287926647" type="Diki">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2631589987663291">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="2630417194692128" type="Diki" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1211334731542838" type="Diki">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8326763734140472">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="4670026964624473" type="Diki" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1121678462439647">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="6366918750405195" type="Diki" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="9021217495655974" type="Diki">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4698271242528241">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="2604250990920246" type="Diki" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7203850488601839" type="Diki">
+                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8063248270486884">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="160170803492121" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="9837132268908236" type="Diki">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3743204412025012">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="7134592628233118" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="5449273844585826" type="Diki">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8468730010036365">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3711822183584016" type="Diki">
+                    <param id="0" name="Object">barnacle</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="8877436261284389" type="Diki">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="4167433134980726" type="System">
+                    <param id="0" name="Variable">playernyawa3</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="1838689353800004" type="Audio">
+                    <param id="0" name="Audio file">Hit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6836175547396981">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8450356259442596" type="Diki">
+                    <param id="0" name="Object">wingMan</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="9072447164085968" type="Diki">
+                    <param id="0" name="&apos;On&apos; time">0.2</param>
+                    <param id="1" name="&apos;Off&apos; time">0.2</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="8407778401284741" type="System">
+                    <param id="0" name="Variable">playernyawa3</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="5407673415149958" type="Audio">
+                    <param id="0" name="Audio file">Hit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="884220843802567">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7313453604601532" type="Diki">
+                    <param id="0" name="Object">gold2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9537649691088545" type="gold2" />
+                <action id="-10" name="Add to" sid="3970694085347109" type="System">
+                    <param id="0" name="Variable">koin3</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="9367846445408179" type="Audio">
+                    <param id="0" name="Audio file">Collect Gem</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5555302862420524">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="6894524509460148" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7428868646161315">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="6159088473156415" type="SpriteFont">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;koin3&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="1441765327668412" type="SpriteFont">
+                            <param id="0" name="Text">koin3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4250734774399436">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="3557633979563105" type="SpriteFont">
+                            <param id="0" name="Instance variable">type</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;nyawa3&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="5882746246010746" type="SpriteFont">
+                            <param id="0" name="Text">playernyawa3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8431623104694382">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="674586279710556" type="System">
+                    <param id="0" name="Variable">playernyawa3</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6412115073599939">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="8891064491591601" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="6743258191040585" type="Diki" />
+                        <action id="6" name="Stop" sid="2538662931438042" type="Audio">
+                            <param id="0" name="Tag">&quot;musik&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="1174489501606008" type="Audio">
+                            <param id="0" name="Audio file">Jingle Lose</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;gameover&quot;</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="3397622745373874" type="Diki">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7973086554095522" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="3475006566838878" type="System">
+                            <param id="0" name="Layer">&quot;Popup&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="907889370722899">
+            <conditions>
+                <condition id="-9" name="Layer is visible" sid="2651342011212157" type="System">
+                    <param id="0" name="Layer">&quot;Popup&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3333691163384056">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="5740314159638367" type="Touch">
+                            <param id="0" name="Object">Restart</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="3782860376589056" type="Restart">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="9531746802243478" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="4501531259662346" type="Restart">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8703124684542" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7242270859830191" type="System">
+                            <param id="0" name="Variable">playernyawa3</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5628462945065758" type="System">
+                            <param id="0" name="Variable">koin2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="1971385660367471" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="342615321731041">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="2353086161376173" type="Touch">
+                            <param id="0" name="Object">SelecLevel</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="2945347543012858" type="SelecLevel">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8681162608437245" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="5065581312241837" type="SelecLevel">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="640408743522367" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8110702158579558" type="System">
+                            <param id="0" name="Variable">playernyawa3</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6024531725085622" type="System">
+                            <param id="0" name="Variable">koin3</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="1991132288261959" type="System">
+                            <param id="0" name="Layout">Level</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6282543569758795">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="9731982984485099" type="Touch">
+                            <param id="0" name="Object">Next</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="3565435676072749" type="Next">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="725405545139294" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="9119006685028964" type="Next">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="9520256625172254" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="8686704257366117" type="System">
+                            <param id="0" name="Layout">str(Level)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="4384146171106914">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1821419210430705" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="113603473177054" type="System">
+                    <param id="0" name="Layer">&quot;Popup&quot;</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8385164637630349">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="615426612905854" type="Berdiri">
+                    <param id="0" name="Object">Air1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="1124286542357773" type="System">
+                    <param id="0" name="Variable">playernyawa3</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="8953923012327994" type="Berdiri">
+                    <param id="0" name="X">992</param>
+                    <param id="1" name="Y">448</param>
+                </action>
+                <action id="6" name="Stop" sid="9310156983971396" type="Audio">
+                    <param id="0" name="Tag">&quot;musik&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="9474122217187571" type="Audio">
+                    <param id="0" name="Audio file">Hit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="7677293177112909" type="Audio">
+                    <param id="0" name="Audio file">Terima Kasih Guruku - Abahe Neswa - Free Download, Borrow, and Streaming - Internet Archive</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8660627939502901">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9250608927705031" type="Berdiri">
+                    <param id="0" name="Object">Air2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="3865688937282706" type="System">
+                    <param id="0" name="Variable">playernyawa3</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="228316815229981" type="Berdiri">
+                    <param id="0" name="X">2880</param>
+                    <param id="1" name="Y">320</param>
+                </action>
+                <action id="6" name="Stop" sid="245154817105355" type="Audio">
+                    <param id="0" name="Tag">&quot;musik&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="6541574179314211" type="Audio">
+                    <param id="0" name="Audio file">Hit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="8593840366861559" type="Audio">
+                    <param id="0" name="Audio file">Terima Kasih Guruku - Abahe Neswa - Free Download, Borrow, and Streaming - Internet Archive</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5868356325341577">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2229009267839647" type="Diki">
+                    <param id="0" name="Object">gedungsekolahpng</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="5136256022119114" type="System">
+                    <param id="0" name="Group name">&quot;Player3&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="1602819619353181" type="System">
+                    <param id="0" name="Seconds">1.0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="9590511815604083" type="Next">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="6" name="Stop" sid="1451441892356856" type="Audio">
+                    <param id="0" name="Tag">&quot;musik&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="256267972933594" type="Audio">
+                    <param id="0" name="Audio file">Jingle Win</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="9347004588260287" type="System">
+                    <param id="0" name="Layout">&quot;Kuis&quot;&amp;choose(1,2,3,4,5)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="2681530495756349" title="Player3">
+            <sub-events>
+                <event-group description="" sid="5095842292593524" title="Player Animasi3">
+                    <sub-events>
+                        <event-block sid="4194281980669758">
+                            <conditions>
+                                <condition behavior="Platform" id="8" name="On moved" sid="6180305473510958" type="Diki" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="5627722145154659" type="Diki">
+                                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="7091248039831685">
+                            <conditions>
+                                <condition behavior="Platform" id="7" name="On stopped" sid="2118692824908344" type="Diki" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="4511160257990558" type="Diki">
+                                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6432805932313777">
+                            <conditions>
+                                <condition behavior="Platform" id="5" name="On jump" sid="8837980692996238" type="Diki" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="9493446777584674" type="Diki">
+                                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="955572402832211">
+                            <conditions>
+                                <condition behavior="Platform" id="9" name="On landed" sid="6018177188621637" type="Diki" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="318618034068689">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" name="Is moving" sid="6222261108621898" type="Diki" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="8011765103341318" type="Diki">
+                                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="3205608646790481">
+                                    <conditions>
+                                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="8407631666933465" type="Diki" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="4" name="Set animation" sid="2886792974225929" type="Diki">
+                                            <param id="0" name="Animation">&quot;Stand&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="6746153832529773">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="8691729311723924" type="Keyboard">
+                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="8033544963795936" type="Diki">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8666214439872744">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="7029853004307022" type="Keyboard">
+                                    <param id="0" name="Key">37 (Left arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="5646328986246606" type="Diki">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="2030256352685104" title="Player Control3">
+                    <sub-events>
+                        <event-block sid="1368259291285648">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="1732396023667479" type="Keyboard">
+                                    <param id="0" name="Key">39 (Right arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="5436879043491011" type="Diki">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="6245220771710698">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="4942837340366542" type="Keyboard">
+                                    <param id="0" name="Key">37 (Left arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="5230407636456771" type="Diki">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8538958845175561">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="7619058125736838" type="Keyboard">
+                                    <param id="0" name="Key">38 (Up arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="6712095927406241" type="Diki">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

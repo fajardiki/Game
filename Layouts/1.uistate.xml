@@ -4,11 +4,11 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
-        <position-x>446.073</position-x>
-        <position-y>296.535</position-y>
-        <position-z>141.19</position-z>
-        <lookat-x>446.073</lookat-x>
-        <lookat-y>296.535</lookat-y>
+        <position-x>4564.61</position-x>
+        <position-y>73.637</position-y>
+        <position-z>206.716</position-z>
+        <lookat-x>4564.61</lookat-x>
+        <lookat-y>73.637</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -23,17 +23,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="Player" />
+    <active-layer name="Popup" />
     <layers>
-        <layer locked="1" name="Background" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Background" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Dekor" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Ground" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Player" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Musuh" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Ornamen" parallax-in-editor="0" visible="0" />
+        <layer locked="0" name="Ornamen" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Skor" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Popup" parallax-in-editor="0" visible="0" />
-        <layer locked="0" name="Pertanyaan" parallax-in-editor="0" visible="0" />
-        <layer locked="0" name="Salah" parallax-in-editor="0" visible="0" />
+        <layer locked="0" name="Popup" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Pertanyaan" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Salah" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Logik Intro</name>
+    <events>
+        <event-block sid="7448988496544917">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="200606830905888" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Play" sid="3169738329287045" type="intro" />
+            </actions>
+        </event-block>
+        <event-block sid="9063902623256788">
+            <conditions>
+                <condition id="2" name="Has ended" sid="7526108072910867" type="intro" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="298993603162773" type="System">
+                    <param id="0" name="Layout">Level</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

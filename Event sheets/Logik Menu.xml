@@ -5,27 +5,6 @@
     <events>
         <variable constant="0" name="Music" sid="7656644069522183" static="0" type="text">on</variable>
         <variable constant="0" name="Sound" sid="2539704503908602" static="0" type="text">on</variable>
-        <event-block sid="8786923749308285">
-            <conditions>
-                <condition id="17" name="On tap object" sid="9336287063012339" type="Touch">
-                    <param id="0" name="Object">Play</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="3925977122434856" type="System">
-                    <param id="0" name="Layout">Level</param>
-                </action>
-                <action id="6" name="Stop" sid="99485042253287" type="Audio">
-                    <param id="0" name="Tag">&quot;musik&quot;</param>
-                </action>
-                <action id="0" name="Play" sid="2151060699239357" type="Audio">
-                    <param id="0" name="Audio file">click</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="6137562981564218">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="759980364080352" type="System" />
@@ -39,13 +18,38 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="8786923749308285">
+            <conditions>
+                <condition id="17" name="On tap object" sid="9336287063012339" type="Touch">
+                    <param id="0" name="Object">Play</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="99485042253287" type="Audio">
+                    <param id="0" name="Tag">&quot;musik&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="2151060699239357" type="Audio">
+                    <param id="0" name="Audio file">click</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="3925977122434856" type="System">
+                    <param id="0" name="Layout">intro</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="8382323323024911">
             <conditions>
                 <condition id="17" name="On tap object" sid="5120496450312261" type="Touch">
                     <param id="0" name="Object">btnLagu</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="6" name="Stop" sid="4925926573461011" type="Audio">
+                    <param id="0" name="Tag">&quot;of&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

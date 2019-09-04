@@ -8,7 +8,14 @@
             <conditions>
                 <condition id="-2" name="On start of layout" sid="387684621101513" type="System" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="5255579405506835" type="Audio">
+                    <param id="0" name="Audio file">MattOglseby - 1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;leveling&quot;</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="9676964900127163">
                     <conditions>
@@ -72,6 +79,9 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
+                <action id="6" name="Stop" sid="4169518905761587" type="Audio">
+                    <param id="0" name="Tag">&quot;leveling&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3603004139601308">
@@ -89,6 +99,9 @@
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="465242257688868" type="Audio">
+                    <param id="0" name="Tag">&quot;leveling&quot;</param>
                 </action>
             </actions>
         </event-block>

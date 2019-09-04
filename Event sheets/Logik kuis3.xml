@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Logik kuis3</name>
+    <events>
+        <event-block sid="5718949654526443">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9200255880863638" type="Touch">
+                    <param id="0" name="Object">9b</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="5010511938693976" type="tandaX2">
+                    <param id="0" name="X">564</param>
+                    <param id="1" name="Y">203</param>
+                </action>
+                <action id="-3" name="Set position" sid="2906869667392573" type="cobalagi2">
+                    <param id="0" name="X">75</param>
+                    <param id="1" name="Y">572</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5243954530198645">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1552545521252909" type="Touch">
+                    <param id="0" name="Object">3b</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="3228903537899497" type="Centang2">
+                    <param id="0" name="X">565</param>
+                    <param id="1" name="Y">198</param>
+                </action>
+                <action id="-3" name="Set position" sid="437994314334237" type="IconSelanjutnya2">
+                    <param id="0" name="X">1057</param>
+                    <param id="1" name="Y">576</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8151554089734786">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6188155897694536" type="Touch">
+                    <param id="0" name="Object">4b</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="6192586714342984" type="tandaX2">
+                    <param id="0" name="X">564</param>
+                    <param id="1" name="Y">203</param>
+                </action>
+                <action id="-3" name="Set position" sid="4990918849786662" type="cobalagi2">
+                    <param id="0" name="X">75</param>
+                    <param id="1" name="Y">572</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5387544428840542">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4944139959171883" type="Touch">
+                    <param id="0" name="Object">cobalagi2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5472879156041703" type="System">
+                    <param id="0" name="Layout">Kuis3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7440545280952494">
+            <conditions>
+                <condition id="3" name="On touched object" sid="9734821231265696" type="Touch">
+                    <param id="0" name="Object">IconSelanjutnya2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="3611245294613394" type="System">
+                    <param id="0" name="Variable">Level</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="7301219082625527" type="System">
+                    <param id="0" name="Layout">str(Level)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
