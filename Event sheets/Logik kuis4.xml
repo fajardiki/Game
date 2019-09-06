@@ -6,10 +6,128 @@
         <event-block sid="1220081064999627">
             <conditions>
                 <condition id="3" name="On touched object" sid="2375129020911586" type="Touch">
+                    <param id="0" name="Object">sila3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="8079577041485311" type="tandaX2">
+                    <param id="0" name="X">564</param>
+                    <param id="1" name="Y">203</param>
+                </action>
+                <action id="-3" name="Set position" sid="8972751594333268" type="cobalagi2">
+                    <param id="0" name="X">75</param>
+                    <param id="1" name="Y">572</param>
+                </action>
+                <action id="0" name="Play" sid="1140342743376402" type="Audio">
+                    <param id="0" name="Audio file">Salah</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7640208883047343">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2570845617585167" type="Touch">
                     <param id="0" name="Object">sila2</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="-3" name="Set position" sid="425149709866611" type="Centang2">
+                    <param id="0" name="X">565</param>
+                    <param id="1" name="Y">198</param>
+                </action>
+                <action id="-3" name="Set position" sid="5726948437277129" type="IconSelanjutnya2">
+                    <param id="0" name="X">1057</param>
+                    <param id="1" name="Y">576</param>
+                </action>
+                <action id="0" name="Play" sid="9383999574448648" type="Audio">
+                    <param id="0" name="Audio file">Benar</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8057116853517218">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5071490044748864" type="Touch">
+                    <param id="0" name="Object">SILA4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="9774145049674648" type="tandaX2">
+                    <param id="0" name="X">564</param>
+                    <param id="1" name="Y">203</param>
+                </action>
+                <action id="-3" name="Set position" sid="9746720433838327" type="cobalagi2">
+                    <param id="0" name="X">75</param>
+                    <param id="1" name="Y">572</param>
+                </action>
+                <action id="0" name="Play" sid="4449167999358474" type="Audio">
+                    <param id="0" name="Audio file">Salah</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5112170788628019">
+            <conditions>
+                <condition id="3" name="On touched object" sid="3504662524863435" type="Touch">
+                    <param id="0" name="Object">SILA5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="7590653816142751" type="tandaX2">
+                    <param id="0" name="X">564</param>
+                    <param id="1" name="Y">203</param>
+                </action>
+                <action id="-3" name="Set position" sid="8017584046141304" type="cobalagi2">
+                    <param id="0" name="X">75</param>
+                    <param id="1" name="Y">572</param>
+                </action>
+                <action id="0" name="Play" sid="7516096292824751" type="Audio">
+                    <param id="0" name="Audio file">Salah</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9250812088851028">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1771026179969498" type="Touch">
+                    <param id="0" name="Object">cobalagi2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6332409507582703" type="System">
+                    <param id="0" name="Layout">Kuis4</param>
+                </action>
+                <action id="0" name="Play" sid="5115088460010037" type="Audio">
+                    <param id="0" name="Audio file">CobaLagi</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7629490004904095">
+            <conditions>
+                <condition id="3" name="On touched object" sid="1398690982586641" type="Touch">
+                    <param id="0" name="Object">IconSelanjutnya2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="1770385860416137" type="System">
+                    <param id="0" name="Variable">Level</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="1616498996592474" type="System">
+                    <param id="0" name="Layout">str(Level)</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

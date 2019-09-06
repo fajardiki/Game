@@ -2,5 +2,460 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Logik kuis5</name>
-    <events />
+    <events>
+        <variable constant="0" name="coba" sid="8107028686157841" static="0" type="number">5</variable>
+        <variable constant="0" name="kotak" sid="5522128022587952" static="0" type="number">7</variable>
+        <event-block sid="5181220906689376">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="4266773881339464" type="sukarno" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2673823005546117">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="4895410711989219" type="sukarno">
+                            <param id="0" name="Object">kotak1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="8030121219845068" type="sukarno">
+                            <param id="0" name="X">kotak1.X</param>
+                            <param id="1" name="Y">kotak1.Y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="311410645249044" type="System">
+                            <param id="0" name="Variable">kotak</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="972840206853928" type="Audio">
+                            <param id="0" name="Audio file">Benar</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1948835671616088">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5643906692929118" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="2580019553132327" type="sukarno">
+                            <param id="0" name="X">sukarno.sukarno_x</param>
+                            <param id="1" name="Y">sukarno.sukarno_y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="9163214458743008" type="System">
+                            <param id="0" name="Variable">coba</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="3698458694594389" type="Audio">
+                            <param id="0" name="Audio file">Salah</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2066377477516573">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="683038173228038" type="suharto" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="45593005431145">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="2205431078631825" type="suharto">
+                            <param id="0" name="Object">kotak2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="8816767925371301" type="suharto">
+                            <param id="0" name="X">kotak2.X</param>
+                            <param id="1" name="Y">kotak2.Y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="4994518733906501" type="System">
+                            <param id="0" name="Variable">kotak</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="6357854031972486" type="Audio">
+                            <param id="0" name="Audio file">Benar</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6993292575259875">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2565698240840039" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="5724978323737025" type="suharto">
+                            <param id="0" name="X">suharto.suharto_x</param>
+                            <param id="1" name="Y">suharto.suharto_y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="8685458167090902" type="System">
+                            <param id="0" name="Variable">coba</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="4902629003241703" type="Audio">
+                            <param id="0" name="Audio file">Salah</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6757367529191171">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="4215692924065263" type="habibi" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4457721849470822">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="7431315043704697" type="habibi">
+                            <param id="0" name="Object">kotak3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="1172265577783962" type="habibi">
+                            <param id="0" name="X">kotak3.X</param>
+                            <param id="1" name="Y">kotak3.Y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="636380695189794" type="System">
+                            <param id="0" name="Variable">kotak</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="6508180118903319" type="Audio">
+                            <param id="0" name="Audio file">Benar</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3513075950966743">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5772078620314784" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="6855618086715244" type="habibi">
+                            <param id="0" name="X">habibi.habibi_x</param>
+                            <param id="1" name="Y">habibi.habibi_y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="8915171735064183" type="System">
+                            <param id="0" name="Variable">coba</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="9565992405472562" type="Audio">
+                            <param id="0" name="Audio file">Salah</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="7242518523915727">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="8610906440517332" type="gusdur" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="2635710166836268">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="7466257963931574" type="gusdur">
+                            <param id="0" name="Object">kotak4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="1583291951221232" type="gusdur">
+                            <param id="0" name="X">kotak4.X</param>
+                            <param id="1" name="Y">kotak4.Y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="8222467479341891" type="System">
+                            <param id="0" name="Variable">kotak</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="9863350017470615" type="Audio">
+                            <param id="0" name="Audio file">Benar</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5788511628845654">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="7848419023500101" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="8896977967143635" type="gusdur">
+                            <param id="0" name="X">gusdur.gusdur_x</param>
+                            <param id="1" name="Y">gusdur.gusdur_y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="2853938799365777" type="System">
+                            <param id="0" name="Variable">coba</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="4308668342710523" type="Audio">
+                            <param id="0" name="Audio file">Salah</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1100342482938079">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="3638046737156063" type="megawati" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9069328849651325">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="7400915381457783" type="megawati">
+                            <param id="0" name="Object">kotak5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="9179767956640648" type="megawati">
+                            <param id="0" name="X">kotak5.X</param>
+                            <param id="1" name="Y">kotak5.Y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="5017838958122808" type="System">
+                            <param id="0" name="Variable">kotak</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="8769270717472373" type="Audio">
+                            <param id="0" name="Audio file">Benar</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="473726326826781">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5575452258825122" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="683434554797587" type="megawati">
+                            <param id="0" name="X">megawati.megawati_x</param>
+                            <param id="1" name="Y">megawati.megawati_y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="3473328091065972" type="System">
+                            <param id="0" name="Variable">coba</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="7942337664866746" type="Audio">
+                            <param id="0" name="Audio file">Salah</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1942147160009242">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="3303948540566912" type="sby" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="3123358019234511">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="6920618360244134" type="sby">
+                            <param id="0" name="Object">kotak6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="6056501043688487" type="sby">
+                            <param id="0" name="X">kotak6.X</param>
+                            <param id="1" name="Y">kotak6.Y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="7511168334788275" type="System">
+                            <param id="0" name="Variable">kotak</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="7701031517082919" type="Audio">
+                            <param id="0" name="Audio file">Benar</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8451908997026124">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="8418863412573693" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="3433095019524976" type="sby">
+                            <param id="0" name="X">sby.sby_x</param>
+                            <param id="1" name="Y">sby.sby_y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="5572921237101265" type="System">
+                            <param id="0" name="Variable">coba</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="1782415405014778" type="Audio">
+                            <param id="0" name="Audio file">Salah</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1349700690371504">
+            <conditions>
+                <condition behavior="DragDrop" id="2" name="On drop" sid="6945028998927305" type="jokowi" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8078746532750713">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="1255572940548424" type="jokowi">
+                            <param id="0" name="Object">kotak7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="6065374526105671" type="jokowi">
+                            <param id="0" name="X">kotak7.X</param>
+                            <param id="1" name="Y">kotak7.Y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="2819622414664919" type="System">
+                            <param id="0" name="Variable">kotak</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="4138726333873489" type="Audio">
+                            <param id="0" name="Audio file">Benar</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9619624100477383">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="1813397188848812" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="5470667461443193" type="jokowi">
+                            <param id="0" name="X">jokowi.jokowi_x</param>
+                            <param id="1" name="Y">jokowi.jokowi_y</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="3003295282347836" type="System">
+                            <param id="0" name="Variable">coba</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="9164866404212883" type="Audio">
+                            <param id="0" name="Audio file">Salah</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2203678377876056">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6028541436140917" type="System">
+                    <param id="0" name="Variable">kotak</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="3260733987489273" type="Centang2">
+                    <param id="0" name="X">565</param>
+                    <param id="1" name="Y">198</param>
+                </action>
+                <action id="-3" name="Set position" sid="8054587476048192" type="IconSelanjutnya2">
+                    <param id="0" name="X">1057</param>
+                    <param id="1" name="Y">576</param>
+                </action>
+                <action id="0" name="Play" sid="3135208993807622" type="Audio">
+                    <param id="0" name="Audio file">Jingle Win</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6658594580423031">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4480584588659565" type="System">
+                    <param id="0" name="Variable">coba</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="577954545408653" type="tandaX2">
+                    <param id="0" name="X">564</param>
+                    <param id="1" name="Y">203</param>
+                </action>
+                <action id="-3" name="Set position" sid="4084512225326775" type="cobalagi2">
+                    <param id="0" name="X">75</param>
+                    <param id="1" name="Y">572</param>
+                </action>
+                <action id="0" name="Play" sid="8139330892210949" type="Audio">
+                    <param id="0" name="Audio file">Jingle Lose</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4067024705948409">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6652713982487432" type="Touch">
+                    <param id="0" name="Object">cobalagi2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6814182281487771" type="System">
+                    <param id="0" name="Layout">Kuis5</param>
+                </action>
+                <action id="-9" name="Set value" sid="1560364974407165" type="System">
+                    <param id="0" name="Variable">coba</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+                <action id="0" name="Play" sid="7748004130401779" type="Audio">
+                    <param id="0" name="Audio file">CobaLagi</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7519695115694118">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4578394942029631" type="Touch">
+                    <param id="0" name="Object">IconSelanjutnya2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="3498508009277434" type="System">
+                    <param id="0" name="Variable">Level</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-25" name="Go to layout (by name)" sid="2517642345759073" type="System">
+                    <param id="0" name="Layout">str(Level)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

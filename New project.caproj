@@ -15,11 +15,13 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="video" version="1">Video</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -3280,6 +3282,15 @@
         </object-type>
         <object-type name="gusdur" sid="3923574249802138">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="gusdur_x" sid="3258959053536315" type="number" />
+                <instance-variable name="gusdur_y" sid="6889345343204209" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="4689758671076929">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8904234250967468" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\Users\asus\Desktop\Asset\Presiden\gusdur.png">
@@ -3295,6 +3306,15 @@
         </object-type>
         <object-type name="habibi" sid="6973031727386158">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="habibi_x" sid="2104360596246034" type="number" />
+                <instance-variable name="habibi_y" sid="8105277090469942" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="9716561492076041">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8205290554899008" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\Users\asus\Desktop\Asset\Presiden\habibi.png" />
@@ -3303,6 +3323,15 @@
         </object-type>
         <object-type name="jokowi" sid="4359445245823874">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="jokowi_x" sid="2484272110264713" type="number" />
+                <instance-variable name="jokowi_y" sid="6762268501352729" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="1974327815208818">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4106215200731419" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\Users\asus\Desktop\Asset\Presiden\jokowi.png" />
@@ -3311,6 +3340,15 @@
         </object-type>
         <object-type name="megawati" sid="2651969210013633">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="megawati_x" sid="5210519907042119" type="number" />
+                <instance-variable name="megawati_y" sid="1260823708269751" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="9726709110577118">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373106118726084" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\Users\asus\Desktop\Asset\Presiden\megawati.png" />
@@ -3319,6 +3357,15 @@
         </object-type>
         <object-type name="sby" sid="7259958874105965">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="sby_x" sid="6647164734366715" type="number" />
+                <instance-variable name="sby_y" sid="7193620305742738" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="2590975378413055">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7857008271535646" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\Users\asus\Desktop\Asset\Presiden\sby.png" />
@@ -3327,6 +3374,15 @@
         </object-type>
         <object-type name="suharto" sid="2030979425816141">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="suharto_x" sid="8079474444720891" type="number" />
+                <instance-variable name="suharto_y" sid="2999372258389573" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="8866688710856824">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5643865547091157" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\Users\asus\Desktop\Asset\Presiden\suharto.png">
@@ -3342,11 +3398,98 @@
         </object-type>
         <object-type name="sukarno" sid="118165726660426">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="sukarno_x" sid="4926121218625001" type="number" />
+                <instance-variable name="sukarno_y" sid="2141381053024955" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="DragDrop" sid="398196455855878">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7446227270168372" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.503145" original-source="C:\Users\asus\Desktop\Asset\Presiden\sukarno.png" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="kotak1" sid="8296203074878771">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5660617847969914" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Presiden\kotak.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kotak2" sid="2408356967286602">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2864328122552737" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Presiden\kotak.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kotak3" sid="8755844420815902">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8457342825924653" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Presiden\kotak.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kotak4" sid="7321185022177292">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="995810075740662" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Presiden\kotak.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kotak5" sid="1150979402417416">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="382900002697048" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Presiden\kotak.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kotak6" sid="1957294893989334">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2134157520485155" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Presiden\kotak.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="kotak7" sid="5630302969490933">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4201770754286405" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.5" original-source="C:\Users\asus\Desktop\Asset\Presiden\kotak.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground14" sid="7036305006452579">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\asus\Desktop\Asset\Dekor\fluidBlue_top.png" />
+        </object-type>
+        <object-type name="Text" sid="8252218417071296">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="5777813889223512">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text3" sid="361974072138762">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text4" sid="703940316128025">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text5" sid="9658185041964178">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text6" sid="4110904117973412">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
@@ -3359,7 +3502,7 @@
         <layout>Kuis1.xml</layout>
         <layout>Kuis2.xml</layout>
         <layout>Kuis3.xml</layout>
-        <layout>end.xml</layout>
+        <layout>6.xml</layout>
         <layout>2.xml</layout>
         <layout>3.xml</layout>
         <layout>intro.xml</layout>
@@ -3375,7 +3518,7 @@
         <event-sheet>Logik kuis1.xml</event-sheet>
         <event-sheet>Logik kuis2.xml</event-sheet>
         <event-sheet>Logik kuis3.xml</event-sheet>
-        <event-sheet>end.xml</event-sheet>
+        <event-sheet>Logik6.xml</event-sheet>
         <event-sheet>Logik Stage 2.xml</event-sheet>
         <event-sheet>Logik Stage 3.xml</event-sheet>
         <event-sheet>Logik Intro.xml</event-sheet>

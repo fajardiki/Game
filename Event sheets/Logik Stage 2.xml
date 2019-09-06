@@ -489,7 +489,7 @@
                 <action id="-16" name="Wait" sid="7377615175841835" type="System">
                     <param id="0" name="Seconds">0.2</param>
                 </action>
-                <action id="-3" name="Set position" sid="3268809046224201" type="Player2">
+                <action id="-3" name="Set position" sid="5131876815447637" type="Player2">
                     <param id="0" name="X">736</param>
                     <param id="1" name="Y">352</param>
                 </action>
@@ -503,6 +503,41 @@
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="0" name="Play" sid="8230008323266121" type="Audio">
+                    <param id="0" name="Audio file">Terima Kasih Guruku - Abahe Neswa - Free Download, Borrow, and Streaming - Internet Archive</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">10</param>
+                    <param id="1" name="Tag (optional)">&quot;musik&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7426251786659144">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7330537070697617" type="Player2">
+                    <param id="0" name="Object">TiledBackground14</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="4721015678784424" type="System">
+                    <param id="0" name="Variable">playernyawa4</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="7813308848063814" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-3" name="Set position" sid="3268809046224201" type="Player2">
+                    <param id="0" name="X">2080</param>
+                    <param id="1" name="Y">480</param>
+                </action>
+                <action id="6" name="Stop" sid="4604522834122791" type="Audio">
+                    <param id="0" name="Tag">&quot;musik&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="2797483133640108" type="Audio">
+                    <param id="0" name="Audio file">Hit</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="9608274051041176" type="Audio">
                     <param id="0" name="Audio file">Terima Kasih Guruku - Abahe Neswa - Free Download, Borrow, and Streaming - Internet Archive</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">10</param>

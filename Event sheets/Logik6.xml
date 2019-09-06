@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Logik6</name>
+    <events>
+        <event-block sid="4734780688807565">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5862010762508058" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9635783038468253" type="Audio">
+                    <param id="0" name="Audio file">Jingle Win</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;end&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="9846033435977779" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="6" name="Stop" sid="6758325687820862" type="Audio">
+                    <param id="0" name="Tag">&quot;end&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="1802991603530945" type="System">
+                    <param id="0" name="Layout">Level</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

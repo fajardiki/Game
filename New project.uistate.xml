@@ -10,12 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Kuis4</layout>
-        <layout active="1" order="3">Menu</layout>
-        <layout order="4">3</layout>
-        <event-sheet order="1">Logik kuis4</event-sheet>
-        <event-sheet order="2">Logik kuis1</event-sheet>
-        <event-sheet order="5">Logik Stage 3</event-sheet>
+        <event-sheet active="1" order="0">Logik Intro</event-sheet>
+        <event-sheet order="1">Logik kuis1</event-sheet>
+        <event-sheet order="2">Logik kuis2</event-sheet>
+        <event-sheet order="3">Logik kuis3</event-sheet>
+        <event-sheet order="4">Logik kuis4</event-sheet>
+        <event-sheet order="5">Logik kuis5</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -183,5 +183,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/sby/" />
         <folder expanded="1" path="animation-folder/suharto/" />
         <folder expanded="1" path="animation-folder/sukarno/" />
+        <folder expanded="1" path="animation-folder/kotak1/" />
+        <folder expanded="1" path="animation-folder/kotak2/" />
+        <folder expanded="1" path="animation-folder/kotak3/" />
+        <folder expanded="1" path="animation-folder/kotak4/" />
+        <folder expanded="1" path="animation-folder/kotak5/" />
+        <folder expanded="1" path="animation-folder/kotak6/" />
+        <folder expanded="1" path="animation-folder/kotak7/" />
     </folders-expanded>
 </c2uistate>

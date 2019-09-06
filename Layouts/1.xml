@@ -1384,8 +1384,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4756</x>
-                        <y>415</y>
+                        <x>4754</x>
+                        <y>427</y>
                         <z>0</z>
                         <width>509</width>
                         <height>338</height>
@@ -2028,6 +2028,33 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>1.560485721</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text" uid="454">
+                    <properties>
+                        <text>Rumah Adat Kalimantan Utara</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Forte,-27,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Character</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4761</x>
+                        <y>179</y>
+                        <z>0</z>
+                        <width>372</width>
+                        <height>108</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
